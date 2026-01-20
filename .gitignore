@@ -1,0 +1,12 @@
+# 1. Clonez l'ancien projet en mode "miroir" dans un dossier temporaire
+git clone --mirror https://github.com/Maxou9595/Cr-dit-Time-.git temp-folder
+
+# 2. Entrez dans ce dossier
+cd temp-folder
+
+# 3. Envoyez le code vers votre NOUVEAU dépôt GitHub
+git push --mirror https://github.com/votre-nom/nouveau-projet.git
+
+# 4. Supprimez le dossier temporaire sur votre ordinateur
+cd ..
+rm -rf temp-folder
