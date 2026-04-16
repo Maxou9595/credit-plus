@@ -1,0 +1,26 @@
+/* Correctifs pour les problèmes d'affichage d'images sur mobile */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Assurer que les images de fond sont correctement affichées */
+[style*="background-image"] {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Correction pour les images dans les conteneurs flex */
+.flex img,
+.grid img {
+  align-self: center;
+}
+
+/* Correction pour Safari mobile */
+@supports (-webkit-touch-callout: none) {
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
