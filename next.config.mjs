@@ -9,6 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  serverExternalPackages: ["resend", "prettier"],
 }
 
 export default nextConfig
