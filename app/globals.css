@@ -1,3 +1,4 @@
+@import "./image-fix.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -68,4 +69,3 @@ html {
 }
 
 /* Import des correctifs pour les images */
-@import "./image-fix.css";
