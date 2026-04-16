@@ -2,11 +2,12 @@ import { NextResponse } from "next/server"
 import { Resend } from "resend"
 
 // Initialiser Resend avec la clé API
-const resend = new Resend(process.env.RESEND_API_KEY)
+
 
 export async function POST(request: Request) {
   try {
     // Récupérer les données du formulaire
+    const resend = new Resend(process.env.RESEND_API_KEY)
     const formData = await request.json()
 
     // Enregistrer la demande dans les logs
