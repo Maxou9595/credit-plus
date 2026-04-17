@@ -1,118 +1,140 @@
-import type { Metadata } from "next"
-import FormSubmitContactForm from "@/components/formsubmit-contact-form"
-
-export const metadata: Metadata = {
-  title: "Contact - Crédit-Plus",
-  description:
-    "Contactez notre équipe pour toute question concernant vos besoins de crédit immobilier, auto, travaux ou professionnel.",
-}
+import { ContactForm } from "@/components/contact-form"
+import { Footer } from "@/components/footer"
+import { Navigation } from "@/components/navigation"
+import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 export default function ContactPage() {
   return (
-    <main className="flex-1">
-      <section className="py-12 md:py-16 lg:py-20">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-            <div>
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Contactez-nous</h1>
-              <p className="text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mb-8">
-                Notre équipe est à votre disposition pour répondre à toutes vos questions concernant nos services de
-                courtage en crédit.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="bg-blue-100 p-2 rounded-full mr-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-blue-600"
-                    >
-                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Téléphone</h3>
-                    <p className="text-gray-600">+33 6 XX XX XX XX</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="bg-blue-100 p-2 rounded-full mr-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-blue-600"
-                    >
-                      <rect width="20" height="16" x="2" y="4" rx="2" />
-                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-600">contact@credit-plus.fr</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="bg-blue-100 p-2 rounded-full mr-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-blue-600"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Adresse</h3>
-                    <p className="text-gray-600">Paris, France</p>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-8">
-                <h3 className="font-semibold text-lg mb-4">Horaires d'ouverture</h3>
-                <div className="grid grid-cols-2 gap-2">
-                  <div>
-                    <p className="font-medium">Lundi - Vendredi</p>
-                    <p className="text-gray-600">9h00 - 18h00</p>
-                  </div>
-                  <div>
-                    <p className="font-medium">Samedi</p>
-                    <p className="text-gray-600">10h00 - 16h00</p>
-                  </div>
-                  <div>
-                    <p className="font-medium">Dimanche</p>
-                    <p className="text-gray-600">Fermé</p>
-                  </div>
-                </div>
-              </div>
+    <main className="min-h-screen bg-background">
+      <Navigation />
+
+      <div className="pt-32 pb-20 px-4 md:px-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
+                Contactez-nous
+              </span>
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              Notre équipe d'experts est à votre écoute pour répondre à toutes vos questions
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Contact Form */}
+            <div className="animate-in fade-in slide-in-from-left duration-1000">
+              <ContactForm />
             </div>
-            <div>
-              <FormSubmitContactForm />
+
+            {/* Contact Info */}
+            <div className="space-y-8 animate-in fade-in slide-in-from-right duration-1000">
+              <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h2 className="text-2xl font-bold mb-6 text-foreground">Nos coordonnées</h2>
+
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4 group">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                      <Phone className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Téléphone</h3>
+                      <a href="tel:0781736129" className="text-muted-foreground hover:text-primary transition-colors">
+                        07-81-73-61-29
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 group">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                      <Mail className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Email</h3>
+                      <a
+                        href="mailto:ctdax@credit-time.fr"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        ctdax@credit-time.fr
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 group">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                      <Clock className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">Horaires</h3>
+                      <div className="text-muted-foreground space-y-1">
+                        <p>Lundi - Vendredi : 9h - 18h</p>
+                        <p>Samedi : 9h - 12h</p>
+                        <p>Dimanche : Fermé</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Agencies */}
+              <div className="bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h2 className="text-2xl font-bold mb-6 text-foreground">Nos agences</h2>
+
+                <div className="space-y-6">
+                  <div className="group">
+                    <div className="flex items-start gap-4">
+                      <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                        <MapPin className="h-5 w-5 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-foreground mb-1">Carignan</h3>
+                        <p className="text-muted-foreground text-sm mb-2">
+                          40 rue maria visseaux
+                          <br />
+                          08110 Carignan
+                        </p>
+                        <a
+                          href="/agences/carignan"
+                          className="text-primary hover:text-primary/80 text-sm font-medium transition-colors"
+                        >
+                          Voir l'agence →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="h-px bg-border" />
+
+                  <div className="group">
+                    <div className="flex items-start gap-4">
+                      <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                        <MapPin className="h-5 w-5 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-foreground mb-1">Dax</h3>
+                        <p className="text-muted-foreground text-sm mb-2">
+                          38 Cr Gallieni
+                          <br />
+                          40100 Dax
+                        </p>
+                        <a
+                          href="/agences/dax"
+                          className="text-primary hover:text-primary/80 text-sm font-medium transition-colors"
+                        >
+                          Voir l'agence →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      <Footer />
     </main>
   )
 }
