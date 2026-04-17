@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { getAllCities } from "@/lib/city-data"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://credit-time.fr"
+  const baseUrl = "https://credit-plus.fr"
   const cities = getAllCities()
 
   // Static pages

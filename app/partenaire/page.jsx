@@ -35,7 +35,7 @@ export default function PartenairePage() {
             className="flex items-center gap-2 text-white hover:text-primary transition-colors px-4 py-2 rounded-lg hover:bg-white/10"
           >
             <span className="text-xl">⬅</span>
-            <span className="hidden sm:inline font-medium">Retour vers Crédit Time</span>
+            <span className="hidden sm:inline font-medium">Retour vers Crédit Plus</span>
             <span className="sm:hidden font-medium">Retour</span>
           </Link>
 

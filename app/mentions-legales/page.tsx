@@ -2,8 +2,8 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata = {
-  title: "Mentions Légales | Crédit Time",
-  description: "Mentions légales de Crédit Time, courtier en crédit immobilier.",
+  title: "Mentions Légales | Crédit Plus",
+  description: "Mentions légales de Crédit Plus, courtier en crédit immobilier.",
 }
 
 export default function MentionsLegalesPage() {
@@ -24,28 +24,28 @@ export default function MentionsLegalesPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">1. Éditeur du site</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Le site credit-time.com est édité par Crédit Time, société spécialisée dans le courtage en crédit
+                Le site credit-plus.com est édité par Crédit Plus, société spécialisée dans le courtage en crédit
                 immobilier.
               </p>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mt-4">
-                <li>Raison sociale : Crédit Time</li>
+                <li>Raison sociale : Crédit Plus</li>
                 <li>Siège social : 38 Cr Gallieni, 40100 Dax</li>
                 <li>Téléphone : 07-81-73-61-29</li>
-                <li>Email : ctdax@credit-time.fr</li>
+                <li>Email : ctdax@credit-plus.fr</li>
               </ul>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4">2. Directeur de la publication</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Le directeur de la publication du site est le représentant légal de Crédit Time.
+                Le directeur de la publication du site est le représentant légal de Crédit Plus.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4">3. Hébergement</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Le site credit-time.com est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789,
+                Le site credit-plus.com est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789,
                 États-Unis.
               </p>
             </section>
@@ -53,11 +53,11 @@ export default function MentionsLegalesPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">4. Activité réglementée</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Crédit Time exerce une activité de courtage en opérations de banque et en services de paiement,
+                Crédit Plus exerce une activité de courtage en opérations de banque et en services de paiement,
                 conformément à l'article L. 519-1 du Code monétaire et financier.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                En tant qu'intermédiaire en opérations de banque et services de paiement (IOBSP), Crédit Time est soumis
+                En tant qu'intermédiaire en opérations de banque et services de paiement (IOBSP), Crédit Plus est soumis
                 au contrôle de l'Autorité de Contrôle Prudentiel et de Résolution (ACPR) - 4 Place de Budapest, CS
                 92459, 75436 Paris Cedex 09.
               </p>
@@ -67,9 +67,9 @@ export default function MentionsLegalesPage() {
               <h2 className="text-2xl font-bold mb-4">5. Propriété intellectuelle</h2>
               <p className="text-muted-foreground leading-relaxed">
                 L'ensemble du contenu de ce site (textes, images, vidéos, logos, etc.) est la propriété exclusive de
-                Crédit Time ou de ses partenaires. Toute reproduction, représentation, modification, publication ou
+                Crédit Plus ou de ses partenaires. Toute reproduction, représentation, modification, publication ou
                 adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est
-                interdite sans l'autorisation écrite préalable de Crédit Time.
+                interdite sans l'autorisation écrite préalable de Crédit Plus.
               </p>
             </section>
 
@@ -83,14 +83,14 @@ export default function MentionsLegalesPage() {
                 concernant.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Pour exercer ces droits, vous pouvez nous contacter à l'adresse : ctdax@credit-time.fr
+                Pour exercer ces droits, vous pouvez nous contacter à l'adresse : ctdax@credit-plus.fr
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4">7. Cookies</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Le site credit-time.com utilise des cookies pour améliorer l'expérience utilisateur et réaliser des
+                Le site credit-plus.com utilise des cookies pour améliorer l'expérience utilisateur et réaliser des
                 statistiques de visite. Vous pouvez à tout moment désactiver ces cookies dans les paramètres de votre
                 navigateur.
               </p>
@@ -99,9 +99,9 @@ export default function MentionsLegalesPage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">8. Limitation de responsabilité</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Crédit Time s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site.
-                Toutefois, Crédit Time ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations
-                mises à disposition sur ce site. En conséquence, Crédit Time décline toute responsabilité pour toute
+                Crédit Plus s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site.
+                Toutefois, Crédit Plus ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations
+                mises à disposition sur ce site. En conséquence, Crédit Plus décline toute responsabilité pour toute
                 imprécision, inexactitude ou omission portant sur des informations disponibles sur le site.
               </p>
             </section>

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export function FloatingCallButton() {
   return (
-    <a href="tel:0781736129" className="fixed bottom-6 right-6 z-50 group" aria-label="Appeler Crédit Time">
+    <a href="tel:0781736129" className="fixed bottom-6 right-6 z-50 group" aria-label="Appeler Crédit Plus">
       <Button
         size="lg"
         className="h-16 w-16 rounded-full shadow-2xl bg-[#DC0032] hover:bg-[#B8002A] transition-all duration-300 hover:scale-110"

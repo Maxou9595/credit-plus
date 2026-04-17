@@ -2,8 +2,8 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata = {
-  title: "Politique de Confidentialité | Crédit Time",
-  description: "Politique de confidentialité et protection des données personnelles de Crédit Time.",
+  title: "Politique de Confidentialité | Crédit Plus",
+  description: "Politique de confidentialité et protection des données personnelles de Crédit Plus.",
 }
 
 export default function PolitiqueConfidentialitePage() {
@@ -24,7 +24,7 @@ export default function PolitiqueConfidentialitePage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">1. Introduction</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Crédit Time accorde une grande importance à la protection de vos données personnelles. Cette politique
+                Crédit Plus accorde une grande importance à la protection de vos données personnelles. Cette politique
                 de confidentialité vous informe sur la manière dont nous collectons, utilisons, partageons et protégeons
                 vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD) et à la
                 loi Informatique et Libertés.
@@ -34,9 +34,9 @@ export default function PolitiqueConfidentialitePage() {
             <section>
               <h2 className="text-2xl font-bold mb-4">2. Responsable du traitement</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Le responsable du traitement de vos données personnelles est Crédit Time, dont le siège social est situé
+                Le responsable du traitement de vos données personnelles est Crédit Plus, dont le siège social est situé
                 au 38 Cr Gallieni, 40100 Dax. Pour toute question relative à la protection de vos données, vous pouvez
-                nous contacter à l'adresse : ctdax@credit-time.fr
+                nous contacter à l'adresse : ctdax@credit-plus.fr
               </p>
             </section>
 
@@ -117,7 +117,7 @@ export default function PolitiqueConfidentialitePage() {
                 <li>Droit de définir des directives relatives au sort de vos données après votre décès</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Pour exercer ces droits, vous pouvez nous contacter à l'adresse : ctdax@credit-time.fr. Vous disposez
+                Pour exercer ces droits, vous pouvez nous contacter à l'adresse : ctdax@credit-plus.fr. Vous disposez
                 également du droit d'introduire une réclamation auprès de la CNIL (www.cnil.fr).
               </p>
             </section>

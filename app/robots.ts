@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/"],
     },
-    sitemap: "https://credit-time.fr/sitemap.xml",
+    sitemap: "https://credit-plus.fr/sitemap.xml",
   }
 }

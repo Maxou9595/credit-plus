@@ -52,7 +52,7 @@ export function Hero() {
             <a href="/">
               <Image
                 src="/logo.png"
-                alt="Crédit Time - Courtier en Prêt Immobilier"
+                alt="Crédit Plus - Courtier en Prêt Immobilier"
                 width={280}
                 height={70}
                 className={`relative transition-all duration-500 ${isScrolled ? "h-12 md:h-14" : "h-14 md:h-16"} w-auto`}

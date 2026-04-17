@@ -53,10 +53,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Email</h3>
                       <a
-                        href="mailto:ctdax@credit-time.fr"
+                        href="mailto:ctdax@credit-plus.fr"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        ctdax@credit-time.fr
+                        ctdax@credit-plus.fr
                       </a>
                     </div>
                   </div>
