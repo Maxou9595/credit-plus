@@ -95,21 +95,27 @@ export function Hero() {
                 <>
                   <div className="fixed inset-0 z-40" onClick={() => setShowAgencies(false)} />
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-72 bg-white border border-gray-200 rounded-xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300 z-50">
-                    <div className="p-2">
-                      <a
-                        href="/agences/carignan"
-                        onClick={() => setShowAgencies(false)}
-                        className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-primary/10 hover:text-primary transition-all duration-200 group"
-                      >
-                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                          <MapPin className="h-5 w-5 text-primary" />
-                        </div>
-                        <div className="flex-1">
-                          <div className="font-semibold text-base">Carignan</div>
-                          <div className="text-xs text-gray-500">Ardennes (08)</div>
-                        </div>
-                        <ArrowRight className="h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
-                      </a>
+                    <div className="p-2 space-y-1">
+                      {[
+                        { href: "/agences/carignan", name: "Carignan", sub: "Ardennes (08)" },
+                        { href: "/agences/partout-en-france", name: "Partout en France", sub: "Réseau national · À distance" },
+                      ].map((ag) => (
+                        <a
+                          key={ag.href}
+                          href={ag.href}
+                          onClick={() => setShowAgencies(false)}
+                          className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-primary/10 hover:text-primary transition-all duration-200 group"
+                        >
+                          <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                            <MapPin className="h-5 w-5 text-primary" />
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-semibold text-base">{ag.name}</div>
+                            <div className="text-xs text-gray-500">{ag.sub}</div>
+                          </div>
+                          <ArrowRight className="h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
+                        </a>
+                      ))}
                     </div>
                   </div>
                 </>
@@ -181,17 +187,23 @@ export function Hero() {
                 </button>
                 {showAgencies && (
                   <div className="mt-2 ml-4 space-y-2">
-                    <a
-                      href="/agences/carignan"
-                      onClick={closeMobileMenu}
-                      className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-primary/10 hover:text-primary transition-all duration-200"
-                    >
-                      <MapPin className="h-5 w-5 text-primary" />
-                      <div>
-                        <div className="font-semibold">Carignan</div>
-                        <div className="text-xs text-gray-500">Ardennes (08)</div>
-                      </div>
-                    </a>
+                    {[
+                      { href: "/agences/carignan", name: "Carignan", sub: "Ardennes (08)" },
+                      { href: "/agences/partout-en-france", name: "Partout en France", sub: "Réseau national · À distance" },
+                    ].map((ag) => (
+                      <a
+                        key={ag.href}
+                        href={ag.href}
+                        onClick={closeMobileMenu}
+                        className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-primary/10 hover:text-primary transition-all duration-200"
+                      >
+                        <MapPin className="h-5 w-5 text-primary" />
+                        <div>
+                          <div className="font-semibold">{ag.name}</div>
+                          <div className="text-xs text-gray-500">{ag.sub}</div>
+                        </div>
+                      </a>
+                    ))}
                   </div>
                 )}
               </div>

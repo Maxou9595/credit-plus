@@ -62,6 +62,7 @@ export function Navigation() {
                   <div className="p-2">
                     {[
                       { name: "Carignan", sub: "Ardennes (08)", href: "/agences/carignan" },
+                      { name: "Partout en France", sub: "Réseau national · À distance", href: "/agences/partout-en-france" },
                     ].map((agency) => (
                       <a
                         key={agency.name}
@@ -115,6 +116,7 @@ export function Navigation() {
           <div className="px-4 py-6 space-y-4">
             <a href="/#services" onClick={closeMobileMenu} className="block text-white hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-primary/10">Nos services</a>
             <a href="/agences/carignan" onClick={closeMobileMenu} className="block text-white hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-primary/10">Agence Carignan</a>
+            <a href="/agences/partout-en-france" onClick={closeMobileMenu} className="block text-white hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-primary/10">Partout en France</a>
             <a href="/contact" onClick={closeMobileMenu} className="block text-white hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-primary/10">Contact</a>
             <a href="/demande-credit?type=consumer" onClick={closeMobileMenu} className="block text-center text-white font-medium py-3 px-4 border-2 border-primary rounded-lg hover:bg-primary/10">Simuler mon crédit</a>
             <a href="tel:0745885764" className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-primary/10 border border-primary/30 rounded-lg text-white font-medium">
