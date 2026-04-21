@@ -98,19 +98,59 @@ const jsonLd = {
 }
 
 const regions = [
-  { name: "Île-de-France", villes: ["Paris", "Versailles", "Boulogne-Billancourt", "Nanterre", "Montreuil"] },
-  { name: "Auvergne-Rhône-Alpes", villes: ["Lyon", "Grenoble", "Clermont-Ferrand", "Valence", "Villeurbanne"] },
-  { name: "Provence-Alpes-Côte d'Azur", villes: ["Marseille", "Nice", "Toulon", "Aix-en-Provence", "Antibes", "Cannes"] },
-  { name: "Occitanie", villes: ["Toulouse", "Montpellier", "Nîmes", "Perpignan", "Bayonne"] },
-  { name: "Nouvelle-Aquitaine", villes: ["Bordeaux", "Pau", "Poitiers", "La Rochelle", "Limoges"] },
-  { name: "Pays de la Loire", villes: ["Nantes", "Le Mans", "Angers"] },
-  { name: "Hauts-de-France", villes: ["Lille", "Calais", "Dunkerque", "Amiens"] },
-  { name: "Bretagne", villes: ["Rennes", "Brest", "Quimper", "Lorient"] },
-  { name: "Grand Est", villes: ["Strasbourg", "Metz", "Nancy", "Mulhouse", "Reims", "Troyes", "Besançon"] },
-  { name: "Normandie", villes: ["Rouen", "Caen", "Le Havre"] },
-  { name: "Bourgogne-Franche-Comté", villes: ["Dijon", "Besançon"] },
-  { name: "Centre-Val de Loire", villes: ["Tours", "Orléans"] },
-  { name: "Grand Est – Alsace", villes: ["Strasbourg", "Mulhouse"] },
+  { name: "Île-de-France", villes: [
+    { nom: "Paris", slug: "paris" }, { nom: "Versailles", slug: "versailles" },
+    { nom: "Boulogne-Billancourt", slug: "boulogne-billancourt" }, { nom: "Nanterre", slug: "nanterre" },
+    { nom: "Montreuil", slug: "montreuil" },
+  ]},
+  { name: "Auvergne-Rhône-Alpes", villes: [
+    { nom: "Lyon", slug: "lyon" }, { nom: "Grenoble", slug: "grenoble" },
+    { nom: "Clermont-Ferrand", slug: "clermont-ferrand" }, { nom: "Valence", slug: "valence" },
+    { nom: "Villeurbanne", slug: "villeurbanne" },
+  ]},
+  { name: "Provence-Alpes-Côte d'Azur", villes: [
+    { nom: "Marseille", slug: "marseille" }, { nom: "Nice", slug: "nice" },
+    { nom: "Toulon", slug: "toulon" }, { nom: "Aix-en-Provence", slug: "aix-en-provence" },
+    { nom: "Antibes", slug: "antibes" }, { nom: "Cannes", slug: "cannes" },
+  ]},
+  { name: "Occitanie", villes: [
+    { nom: "Toulouse", slug: "toulouse" }, { nom: "Montpellier", slug: "montpellier" },
+    { nom: "Nîmes", slug: "nimes" }, { nom: "Perpignan", slug: "perpignan" },
+    { nom: "Bayonne", slug: "bayonne" },
+  ]},
+  { name: "Nouvelle-Aquitaine", villes: [
+    { nom: "Bordeaux", slug: "bordeaux" }, { nom: "Pau", slug: "pau" },
+    { nom: "Poitiers", slug: "poitiers" }, { nom: "La Rochelle", slug: "la-rochelle" },
+    { nom: "Limoges", slug: "limoges" },
+  ]},
+  { name: "Pays de la Loire", villes: [
+    { nom: "Nantes", slug: "nantes" }, { nom: "Le Mans", slug: "le-mans" },
+    { nom: "Angers", slug: "angers" },
+  ]},
+  { name: "Hauts-de-France", villes: [
+    { nom: "Lille", slug: "lille" }, { nom: "Calais", slug: "calais" },
+    { nom: "Dunkerque", slug: "dunkerque" }, { nom: "Amiens", slug: "amiens" },
+  ]},
+  { name: "Bretagne", villes: [
+    { nom: "Rennes", slug: "rennes" }, { nom: "Brest", slug: "brest" },
+    { nom: "Quimper", slug: "quimper" }, { nom: "Lorient", slug: "lorient" },
+  ]},
+  { name: "Grand Est", villes: [
+    { nom: "Strasbourg", slug: "strasbourg" }, { nom: "Metz", slug: "metz" },
+    { nom: "Nancy", slug: "nancy" }, { nom: "Mulhouse", slug: "mulhouse" },
+    { nom: "Reims", slug: "reims" }, { nom: "Troyes", slug: "troyes" },
+    { nom: "Besançon", slug: "besancon" },
+  ]},
+  { name: "Normandie", villes: [
+    { nom: "Rouen", slug: "rouen" }, { nom: "Caen", slug: "caen" },
+    { nom: "Le Havre", slug: "le-havre" },
+  ]},
+  { name: "Bourgogne-Franche-Comté", villes: [
+    { nom: "Dijon", slug: "dijon" }, { nom: "Besançon", slug: "besancon" },
+  ]},
+  { name: "Centre-Val de Loire", villes: [
+    { nom: "Tours", slug: "tours" }, { nom: "Orléans", slug: "orleans" },
+  ]},
 ]
 
 const avantages = [
@@ -271,7 +311,14 @@ export default function PartoutEnFrancePage() {
                     <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
                     <h3 className="font-bold text-gray-900">{r.name}</h3>
                   </div>
-                  <p className="text-sm text-gray-500">{r.villes.join(" · ")}</p>
+                  <div className="flex flex-wrap gap-x-1 gap-y-1">
+                    {r.villes.map((v, i) => (
+                      <span key={v.slug} className="text-sm text-gray-500">
+                        <a href={`/ville/${v.slug}`} className="hover:text-primary hover:underline transition-colors duration-200">{v.nom}</a>
+                        {i < r.villes.length - 1 && <span className="mx-1 text-gray-300">·</span>}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
