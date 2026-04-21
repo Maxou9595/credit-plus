@@ -1851,7 +1851,7 @@ export default async function VillePage({ params }: { params: Promise<{ slug: st
       <section className="py-20 bg-muted/30">
         <div className="max-w-5xl mx-auto px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-            7 outils fournis — 0 € de frais supplémentaires
+            5 outils fournis — 0 € de frais supplémentaires
           </h2>
           <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
             Tout ce qu'il vous faut pour traiter vos dossiers de A à Z, depuis {ville.nom} ou n'importe où en France.
