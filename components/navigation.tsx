@@ -20,13 +20,13 @@ export function Navigation() {
       style={{ backgroundColor: "#292929" }}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="/">
+        <a href="/" className="ml-4">
           <Image
             src="/logo.png"
             alt="Crédit Plus"
             width={280}
             height={280}
-            className="h-12 md:h-14 w-auto"
+            className="h-14 md:h-16 w-auto"
             priority
           />
         </a>

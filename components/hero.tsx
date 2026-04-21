@@ -48,14 +48,14 @@ export function Hero() {
         style={{ backgroundColor: "#1e1e1e" }}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="relative">
+          <div className="relative ml-4">
             <a href="/">
               <Image
                 src="/logo.png"
                 alt="Crédit Plus - Courtier en Prêt Immobilier"
                 width={280}
                 height={280}
-                className={`relative transition-all duration-500 ${isScrolled ? "h-12 md:h-14" : "h-14 md:h-16"} w-auto`}
+                className={`relative transition-all duration-500 ${isScrolled ? "h-14 md:h-16" : "h-16 md:h-18"} w-auto`}
                 priority
               />
             </a>
