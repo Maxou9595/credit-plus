@@ -45,7 +45,7 @@ export function Hero() {
             ? "py-1.5 backdrop-blur-xl border-b border-primary/30 shadow-lg shadow-primary/10"
             : "py-2 backdrop-blur-md border-b border-primary/20"
         }`}
-        style={{ backgroundColor: "#ffffff" }}
+        style={{ backgroundColor: "#1e1e1e" }}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="relative">
@@ -55,7 +55,7 @@ export function Hero() {
                 alt="Crédit Plus - Courtier en Prêt Immobilier"
                 width={280}
                 height={280}
-                className={`relative transition-all duration-500 ${isScrolled ? "h-12 md:h-14" : "h-14 md:h-16"} w-auto`}
+                className={`relative transition-all duration-500 ${isScrolled ? "h-14 md:h-16" : "h-16 md:h-20"} w-auto`}
                 priority
               />
             </a>
@@ -64,9 +64,9 @@ export function Hero() {
           <div className="hidden lg:flex items-center gap-8">
             <a
               href="/temoignages"
-              className="flex flex-col items-center gap-1 px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-all duration-300 border border-yellow-500/30 hover:border-yellow-500/50"
+              className="flex flex-col items-center gap-1 px-3 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 border border-yellow-500/30 hover:border-yellow-500/50"
             >
-              <span className="text-xs font-semibold text-gray-800 whitespace-nowrap">Avis Google vérifiés</span>
+              <span className="text-xs font-semibold text-white whitespace-nowrap">Avis Google vérifiés</span>
               <div className="flex items-center gap-0.5">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-yellow-500 text-yellow-500" />
@@ -75,7 +75,7 @@ export function Hero() {
             </a>
             <a
               href="/#services"
-              className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
+              className="text-white hover:text-primary transition-all duration-300 font-medium relative group"
             >
               Nos services
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -83,7 +83,7 @@ export function Hero() {
             <div className="relative">
               <button
                 onClick={() => setShowAgencies(!showAgencies)}
-                className="flex items-center gap-2 text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group py-2"
+                className="flex items-center gap-2 text-white hover:text-primary transition-all duration-300 font-medium relative group py-2"
               >
                 Nos agences
                 <ChevronDown
@@ -111,7 +111,7 @@ export function Hero() {
                           </div>
                           <div className="flex-1">
                             <div className="font-semibold text-base">{ag.name}</div>
-                            <div className="text-xs text-gray-500">{ag.sub}</div>
+                            <div className="text-xs text-white/60">{ag.sub}</div>
                           </div>
                           <ArrowRight className="h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
                         </a>
@@ -123,21 +123,21 @@ export function Hero() {
             </div>
             <a
               href="/contact"
-              className="text-gray-700 hover:text-primary transition-all duration-300 font-medium relative group"
+              className="text-white hover:text-primary transition-all duration-300 font-medium relative group"
             >
               Contact
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
             <a
               href="/demande-credit?type=consumer"
-              className="text-gray-700 hover:text-primary transition-all duration-300 font-medium px-4 py-2 border-2 border-primary rounded-lg hover:bg-primary/10"
+              className="text-white hover:text-primary transition-all duration-300 font-medium px-4 py-2 border-2 border-primary rounded-lg hover:bg-primary/10"
             >
               Simuler mon crédit
             </a>
             <Button
               variant="outline"
               size="sm"
-              className="gap-2 border-primary/40 hover:bg-primary/10 hover:border-primary transition-all duration-300 text-gray-700"
+              className="gap-2 bg-primary/10 border-primary/30 hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 text-white"
             >
               <Phone className="h-4 w-4" />
               07 45 88 57 64
@@ -146,7 +146,7 @@ export function Hero() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-gray-700 p-2 hover:bg-primary/10 rounded-lg transition-colors"
+            className="lg:hidden text-white p-2 hover:bg-primary/10 rounded-lg transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -154,14 +154,14 @@ export function Hero() {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-xl animate-in slide-in-from-top-2 duration-300">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-[#1e1e1e] border-b border-primary/30 shadow-xl animate-in slide-in-from-top-2 duration-300">
             <div className="px-4 py-6 space-y-4">
               <a
                 href="/temoignages"
                 onClick={closeMobileMenu}
-                className="flex flex-col items-center gap-2 w-full py-3 px-4 bg-gray-100 hover:bg-gray-200 rounded-lg transition-all duration-300 border border-yellow-500/30"
+                className="flex flex-col items-center gap-2 w-full py-3 px-4 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 border border-yellow-500/30"
               >
-                <span className="text-sm font-semibold text-gray-800">Avis Google vérifiés</span>
+                <span className="text-sm font-semibold text-white">Avis Google vérifiés</span>
                 <div className="flex items-center gap-0.5">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
@@ -171,14 +171,14 @@ export function Hero() {
               <a
                 href="/#services"
                 onClick={closeMobileMenu}
-                className="block text-gray-700 hover:text-primary transition-all duration-300 font-medium py-3 px-4 rounded-lg hover:bg-primary/10"
+                className="block text-white hover:text-primary transition-all duration-300 font-medium py-3 px-4 rounded-lg hover:bg-primary/10"
               >
                 Nos services
               </a>
               <div>
                 <button
                   onClick={() => setShowAgencies(!showAgencies)}
-                  className="flex items-center justify-between w-full text-gray-700 hover:text-primary transition-all duration-300 font-medium py-3 px-4 rounded-lg hover:bg-primary/10"
+                  className="flex items-center justify-between w-full text-white hover:text-primary transition-all duration-300 font-medium py-3 px-4 rounded-lg hover:bg-primary/10"
                 >
                   Nos agences
                   <ChevronDown
@@ -195,12 +195,12 @@ export function Hero() {
                         key={ag.href}
                         href={ag.href}
                         onClick={closeMobileMenu}
-                        className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-primary/10 hover:text-primary transition-all duration-200"
+                        className="flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-primary/10 hover:text-primary transition-all duration-200"
                       >
                         <MapPin className="h-5 w-5 text-primary" />
                         <div>
                           <div className="font-semibold">{ag.name}</div>
-                          <div className="text-xs text-gray-500">{ag.sub}</div>
+                          <div className="text-xs text-white/60">{ag.sub}</div>
                         </div>
                       </a>
                     ))}
@@ -210,7 +210,7 @@ export function Hero() {
               <a
                 href="/contact"
                 onClick={closeMobileMenu}
-                className="block text-gray-700 hover:text-primary transition-all duration-300 font-medium py-3 px-4 rounded-lg hover:bg-primary/10"
+                className="block text-white hover:text-primary transition-all duration-300 font-medium py-3 px-4 rounded-lg hover:bg-primary/10"
               >
                 Contact
               </a>
