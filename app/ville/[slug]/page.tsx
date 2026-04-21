@@ -1777,18 +1777,20 @@ export default async function VillePage({ params }: { params: Promise<{ slug: st
                 <tr className="bg-[#1a1a1a] text-white">
                   <th className="text-left px-6 py-4 font-semibold">Montant du prêt</th>
                   <th className="text-center px-6 py-4 font-semibold">Commission bancaire brute</th>
+                  <th className="text-center px-6 py-4 font-semibold">Honoraires client</th>
                   <th className="text-center px-6 py-4 font-semibold text-primary">Votre gain net estimé</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border bg-card">
                 {[
-                  ["200 000 €", "≈ 2 000 €", "Communiqué à l'entretien"],
-                  ["300 000 €", "≈ 3 000 €", "Communiqué à l'entretien"],
-                  ["500 000 €", "≈ 5 000 €", "Communiqué à l'entretien"],
-                ].map(([montant, commission, gain], i) => (
+                  ["200 000 €", "≈ 2 000 €", "Libre (~1 % en moyenne)", "Communiqué à l'entretien"],
+                  ["300 000 €", "≈ 3 000 €", "Libre (~1 % en moyenne)", "Communiqué à l'entretien"],
+                  ["500 000 €", "≈ 5 000 €", "Libre (~1 % en moyenne)", "Communiqué à l'entretien"],
+                ].map(([montant, commission, honoraires, gain], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-card" : "bg-muted/20"}>
                     <td className="px-6 py-4 font-bold text-foreground">{montant}</td>
                     <td className="px-6 py-4 text-center text-muted-foreground">{commission}</td>
+                    <td className="px-6 py-4 text-center text-muted-foreground">{honoraires}</td>
                     <td className="px-6 py-4 text-center font-semibold text-primary">{gain}</td>
                   </tr>
                 ))}
@@ -1796,7 +1798,7 @@ export default async function VillePage({ params }: { params: Promise<{ slug: st
             </table>
           </div>
           <p className="text-center text-xs text-muted-foreground mt-4">
-            * Commission variable selon les banques et le type de financement. La part exacte revenant au courtier partenaire est définie contractuellement.
+            * Commission variable selon les banques et le type de financement. Les honoraires client sont libres et fixés par le courtier indépendant. Le gain net précis est communiqué lors de l'entretien.
           </p>
         </div>
       </section>

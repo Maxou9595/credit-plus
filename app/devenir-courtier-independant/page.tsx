@@ -290,18 +290,20 @@ export default function DevenirCourtierPage() {
                 <tr className="bg-primary text-white">
                   <th className="px-6 py-4 text-left font-semibold">Montant du prêt</th>
                   <th className="px-6 py-4 text-center font-semibold">Commission bancaire brute</th>
+                  <th className="px-6 py-4 text-center font-semibold">Honoraires client</th>
                   <th className="px-6 py-4 text-center font-semibold">Votre gain net estimé</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border bg-card">
                 {[
-                  ["200 000 €", "≈ 2 000 €", "Communiqué à l'entretien"],
-                  ["300 000 €", "≈ 3 000 €", "Communiqué à l'entretien"],
-                  ["500 000 €", "≈ 5 000 €", "Communiqué à l'entretien"],
-                ].map(([montant, commission, net], i) => (
+                  ["200 000 €", "≈ 2 000 €", "Libre (~1 % en moyenne)", "Communiqué à l'entretien"],
+                  ["300 000 €", "≈ 3 000 €", "Libre (~1 % en moyenne)", "Communiqué à l'entretien"],
+                  ["500 000 €", "≈ 5 000 €", "Libre (~1 % en moyenne)", "Communiqué à l'entretien"],
+                ].map(([montant, commission, honoraires, net], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-card" : "bg-muted/20"}>
                     <td className="px-6 py-4 font-semibold text-foreground">{montant}</td>
                     <td className="px-6 py-4 text-center text-primary font-bold">{commission}</td>
+                    <td className="px-6 py-4 text-center text-muted-foreground">{honoraires}</td>
                     <td className="px-6 py-4 text-center text-muted-foreground italic">{net}</td>
                   </tr>
                 ))}
@@ -398,18 +400,20 @@ export default function DevenirCourtierPage() {
                 <tr className="bg-[#1a1a1a] text-white">
                   <th className="text-left px-6 py-4 font-semibold">Montant du prêt</th>
                   <th className="text-center px-6 py-4 font-semibold">Commission bancaire brute</th>
+                  <th className="text-center px-6 py-4 font-semibold">Honoraires client</th>
                   <th className="text-center px-6 py-4 font-semibold text-primary">Votre gain net estimé</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-border bg-card">
                 {[
-                  ["200 000 €", "≈ 2 000 €", "Communiqué à l'entretien"],
-                  ["300 000 €", "≈ 3 000 €", "Communiqué à l'entretien"],
-                  ["500 000 €", "≈ 5 000 €", "Communiqué à l'entretien"],
-                ].map(([montant, commission, gain], i) => (
+                  ["200 000 €", "≈ 2 000 €", "Libre (~1 % en moyenne)", "Communiqué à l'entretien"],
+                  ["300 000 €", "≈ 3 000 €", "Libre (~1 % en moyenne)", "Communiqué à l'entretien"],
+                  ["500 000 €", "≈ 5 000 €", "Libre (~1 % en moyenne)", "Communiqué à l'entretien"],
+                ].map(([montant, commission, honoraires, gain], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-card" : "bg-muted/20"}>
                     <td className="px-6 py-4 font-bold text-foreground">{montant}</td>
                     <td className="px-6 py-4 text-center text-muted-foreground">{commission}</td>
+                    <td className="px-6 py-4 text-center text-muted-foreground">{honoraires}</td>
                     <td className="px-6 py-4 text-center font-semibold text-primary">{gain}</td>
                   </tr>
                 ))}
