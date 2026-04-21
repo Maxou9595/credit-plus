@@ -1484,7 +1484,7 @@ const faqData = [
   },
   {
     q: "Combien de conventions ai-je dès le premier jour ?",
-    a: "+100 conventions actives dès votre activation dans le réseau. Elles couvrent le crédit immobilier, le regroupement de crédits, le crédit à la consommation, l'assurance emprunteur, l'IARD, la santé et la prévoyance. Toutes sont signées au niveau national et opposables dès votre premier dossier soumis.",
+    a: "+100 conventions actives dès votre activation dans le réseau. Elles couvrent le crédit immobilier, le regroupement de crédits, le crédit à la consommation et l'assurance emprunteur. Toutes sont signées au niveau national et opposables dès votre premier dossier soumis.",
   },
   {
     q: "Dois-je abandonner ma propre marque ?",
@@ -1741,7 +1741,7 @@ export default async function VillePage({ params }: { params: Promise<{ slug: st
               },
               {
                 cat: "Assurance & protection",
-                items: ["Assurance emprunteur", "Délégation loi Lemoine", "IARD habitation", "Prévoyance TNS", "Santé individuelle & collective", "Garantie accidents de vie"],
+                items: ["Assurance emprunteur", "Délégation loi Lemoine", "Garantie accidents de vie"],
               },
               {
                 cat: "Investissement & gestion",
