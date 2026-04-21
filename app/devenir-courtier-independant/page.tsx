@@ -260,6 +260,7 @@ export default function DevenirCourtierPage() {
                   ["Redevance mensuelle",      "300 – 1 500 €/mois",         "0 €",                    "0 €"],
                   ["Conventions bancaires",    "Réseau propriétaire",        "0 (à négocier seul)",    "+100 nationales dès J1"],
                   ["Outils (CRM, simulateur)", "Inclus (dans la franchise)", "À financer",             "Inclus — 0 €"],
+                  ["Honoraires client",        "Inclus franchise",           "Libre",                  "Libre (~1 % en moyenne)"],
                   ["Marque",                   "Imposée",                    "Libre",                  "Libre ou Crédit +"],
                   ["Exclusivité territoriale", "Souvent oui",                "Non",                    "Non"],
                 ].map(([crit, fr, ind, cp], i) => (
@@ -273,6 +274,43 @@ export default function DevenirCourtierPage() {
               </tbody>
             </table>
           </div>
+        </div>
+      </section>
+
+      {/* ── Commission réelle ──────────────────────────────────────── */}
+      <section className="py-16 bg-primary/5">
+        <div className="max-w-3xl mx-auto px-4 md:px-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center">Combien vous touchez réellement</h2>
+          <p className="text-muted-foreground text-center mb-8 text-sm">
+            Chiffres basés sur une commission bancaire moyenne de 1 % du capital emprunté.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-border shadow-sm">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary text-white">
+                  <th className="px-6 py-4 text-left font-semibold">Montant du prêt</th>
+                  <th className="px-6 py-4 text-center font-semibold">Commission bancaire brute</th>
+                  <th className="px-6 py-4 text-center font-semibold">Votre gain net estimé</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border bg-card">
+                {[
+                  ["200 000 €", "≈ 2 000 €", "Communiqué à l'entretien"],
+                  ["300 000 €", "≈ 3 000 €", "Communiqué à l'entretien"],
+                  ["500 000 €", "≈ 5 000 €", "Communiqué à l'entretien"],
+                ].map(([montant, commission, net], i) => (
+                  <tr key={i} className={i % 2 === 0 ? "bg-card" : "bg-muted/20"}>
+                    <td className="px-6 py-4 font-semibold text-foreground">{montant}</td>
+                    <td className="px-6 py-4 text-center text-primary font-bold">{commission}</td>
+                    <td className="px-6 py-4 text-center text-muted-foreground italic">{net}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-muted-foreground text-center mt-4">
+            Les honoraires client sont libres et fixés par le courtier indépendant, autour de 1 % en moyenne. Le gain net précis vous est communiqué lors de l'entretien de présentation.
+          </p>
         </div>
       </section>
 
