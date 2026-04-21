@@ -1,7 +1,7 @@
 export function Stats() {
   const stats = [
     { value: "500+", label: "Dossiers financés" },
-    { value: "2", label: "Agences en France" },
+    { value: "+100", label: "Conventions bancaires" },
     { value: "98%", label: "Clients satisfaits" },
     { value: "24h", label: "Délai de réponse" },
   ]
