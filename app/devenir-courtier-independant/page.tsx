@@ -143,8 +143,6 @@ const outils = [
   { icon: FileText,   label: "Signature électronique",   desc: "Dossiers signés à distance, valeur légale, délais réduits." },
   { icon: BadgeCheck, label: "Back-office commissions",  desc: "Suivi de vos encaissements, historique, exports comptables." },
   { icon: Award,      label: "Montage dossier assisté",  desc: "IA + parrain dédié + tunnel guidé jusqu'au paiement — zéro dossier bloqué." },
-  { icon: Shield,     label: "Formation Crédit+ incluse", desc: "Programme complet fourni dès l'activation, sans frais supplémentaires." },
-  { icon: Users,      label: "Accompagnement parrain",   desc: "Un expert Crédit+ vous guide sur chaque dossier jusqu'à votre autonomie." },
 ]
 
 const temoignages = [
@@ -262,8 +260,6 @@ export default function DevenirCourtierPage() {
                   ["Redevance mensuelle",      "300 – 1 500 €/mois",         "0 €",                    "0 €"],
                   ["Conventions bancaires",    "Réseau propriétaire",        "0 (à négocier seul)",    "+100 nationales dès J1"],
                   ["Outils (CRM, simulateur)", "Inclus (dans la franchise)", "À financer",             "Inclus — 0 €"],
-                  ["Montage dossier (IA + Parrain)", "Manuel",                "Seul",                   "IA + Parrain + tunnel"],
-                  ["Formation Crédit+",         "Non applicable",             "À financer",             "Incluse dès J1"],
                   ["Marque",                   "Imposée",                    "Libre",                  "Libre ou Crédit +"],
                   ["Exclusivité territoriale", "Souvent oui",                "Non",                    "Non"],
                 ].map(([crit, fr, ind, cp], i) => (
