@@ -9,8 +9,7 @@ export function Footer() {
           {/* Logo + description */}
           <div className="md:col-span-1">
             <Link href="/">
-              <img src="/logo.png" alt="Crédit Plus" className="h-14 w-auto mb-4" />
-              <span className="text-xl font-bold text-primary">Crédit Plus</span>
+              <img src="/logo.png" alt="Crédit Plus" className="h-16 w-auto mb-4" />
             </Link>
             <p className="text-sm text-white/60 mt-3 leading-relaxed">
               Votre courtier en crédit immobilier de confiance. Nous négocions pour vous les meilleures conditions.

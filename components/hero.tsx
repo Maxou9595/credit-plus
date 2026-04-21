@@ -55,7 +55,7 @@ export function Hero() {
                 alt="Crédit Plus - Courtier en Prêt Immobilier"
                 width={280}
                 height={280}
-                className={`relative transition-all duration-500 ${isScrolled ? "h-14 md:h-16" : "h-16 md:h-20"} w-auto`}
+                className={`relative transition-all duration-500 ${isScrolled ? "h-10 md:h-12" : "h-12 md:h-14"} w-auto`}
                 priority
               />
             </a>
