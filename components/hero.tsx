@@ -26,9 +26,9 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ backgroundColor: "#1a1a1a" }}>
       {/* Animated background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary">
+      <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #1a1a1a 0%, #1a1a1a 60%, #2a1a1a 100%)" }}>
         <div
           className="absolute top-20 right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-glow"
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
@@ -54,7 +54,7 @@ export function Hero() {
                 src="/logo.png"
                 alt="Crédit Plus - Courtier en Prêt Immobilier"
                 width={280}
-                height={70}
+                height={280}
                 className={`relative transition-all duration-500 ${isScrolled ? "h-12 md:h-14" : "h-14 md:h-16"} w-auto`}
                 priority
               />
@@ -107,20 +107,6 @@ export function Hero() {
                         <div className="flex-1">
                           <div className="font-semibold text-base">Carignan</div>
                           <div className="text-xs text-white/60">Ardennes (08)</div>
-                        </div>
-                        <ArrowRight className="h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
-                      </a>
-                      <a
-                        href="/agences/dax"
-                        onClick={() => setShowAgencies(false)}
-                        className="flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-primary/20 hover:text-primary transition-all duration-200 group"
-                      >
-                        <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                          <MapPin className="h-5 w-5 text-primary" />
-                        </div>
-                        <div className="flex-1">
-                          <div className="font-semibold text-base">Dax</div>
-                          <div className="text-xs text-white/60">Landes (40)</div>
                         </div>
                         <ArrowRight className="h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
                       </a>
@@ -206,17 +192,6 @@ export function Hero() {
                         <div className="text-xs text-white/60">Ardennes (08)</div>
                       </div>
                     </a>
-                    <a
-                      href="/agences/dax"
-                      onClick={closeMobileMenu}
-                      className="flex items-center gap-3 px-4 py-3 rounded-lg text-white hover:bg-primary/20 hover:text-primary transition-all duration-200"
-                    >
-                      <MapPin className="h-5 w-5 text-primary" />
-                      <div>
-                        <div className="font-semibold">Dax</div>
-                        <div className="text-xs text-white/60">Landes (40)</div>
-                      </div>
-                    </a>
                   </div>
                 )}
               </div>
@@ -235,7 +210,7 @@ export function Hero() {
                 Simuler mon crédit
               </a>
               <a
-                href="tel:0781736129"
+                href="tel:0745885764"
                 className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-primary/10 border border-primary/30 hover:bg-primary/20 rounded-lg text-white font-medium transition-all duration-300"
               >
                 <Phone className="h-4 w-4" />
@@ -253,7 +228,7 @@ export function Hero() {
             <span className="block bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
               Votre crédit
             </span>
-            <span className="block mt-2 text-foreground">sans perdre de TIME</span>
+            <span className="block mt-2 text-white">sans perdre de TIME</span>
           </h1>
 
           <div className="inline-flex items-center justify-center">
@@ -284,14 +259,14 @@ export function Hero() {
               className="gap-2 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 bg-transparent w-full sm:w-auto"
               asChild
             >
-              <a href="tel:0781736129">
+              <a href="tel:0745885764">
                 <Phone className="h-5 w-5" />
                 APPELER
               </a>
             </Button>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-12 pt-5 text-xs md:text-sm text-muted-foreground">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-12 pt-5 text-xs md:text-sm text-white/60">
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
               <span>100% gratuit</span>
@@ -310,7 +285,7 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
-        <div className="w-6 h-10 border-2 border-foreground/20 rounded-full flex items-start justify-center p-2">
+        <div className="w-6 h-10 border-2 border-white/20 rounded-full flex items-start justify-center p-2">
           <div className="w-1 h-3 bg-primary rounded-full animate-pulse" />
         </div>
       </div>

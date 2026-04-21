@@ -9,7 +9,7 @@ export function Footer() {
           {/* Logo + description */}
           <div className="md:col-span-1">
             <Link href="/">
-              <img src="/logo.svg" alt="Crédit Plus" className="h-14 w-auto mb-4" />
+              <img src="/logo.png" alt="Crédit Plus" className="h-14 w-auto mb-4" />
               <span className="text-xl font-bold text-primary">Crédit Plus</span>
             </Link>
             <p className="text-sm text-white/60 mt-3 leading-relaxed">
@@ -42,7 +42,7 @@ export function Footer() {
             <ul className="space-y-2">
               {[
                 { label: "Agence Carignan (08)", href: "/agences/carignan" },
-                { label: "Agence Dax (40)", href: "/agences/dax" },
+                { label: "Rejoindre le réseau", href: "/devenir-courtier-independant" },
                 { label: "Avis clients", href: "/temoignages" },
                 { label: "FAQ", href: "/faq" },
                 { label: "Contact", href: "/contact" },
@@ -62,8 +62,8 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="tel:0781736129" className="text-sm text-white/60 hover:text-primary transition-colors">
-                  07 81 73 61 29
+                <a href="tel:0745885764" className="text-sm text-white/60 hover:text-primary transition-colors">
+                  07 45 88 57 64
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -74,7 +74,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-white/60">Carignan (08) & Dax (40)</span>
+                <span className="text-sm text-white/60">Carignan (08) – Ardennes</span>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@ export function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} Crédit Plus — SARL LB COURTAGE — ORIAS n°22007152
+            © {new Date().getFullYear()} Crédit Plus — SAS IM COURTAGE — SIREN 944645217 — ORIAS n°25005566
           </p>
           <div className="flex items-center gap-6">
             {[

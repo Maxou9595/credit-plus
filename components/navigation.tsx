@@ -25,7 +25,7 @@ export function Navigation() {
             src="/logo.png"
             alt="Crédit Plus"
             width={280}
-            height={70}
+            height={280}
             className="h-12 md:h-14 w-auto"
             priority
           />
@@ -62,7 +62,6 @@ export function Navigation() {
                   <div className="p-2">
                     {[
                       { name: "Carignan", sub: "Ardennes (08)", href: "/agences/carignan" },
-                      { name: "Dax", sub: "Landes (40)", href: "/agences/dax" },
                     ].map((agency) => (
                       <a
                         key={agency.name}
@@ -96,7 +95,7 @@ export function Navigation() {
             Simuler mon crédit
           </a>
           <Button variant="outline" size="sm" className="gap-2 bg-primary/10 border-primary/30 hover:bg-primary/20 text-white" asChild>
-            <a href="tel:0781736129">
+            <a href="tel:0745885764">
               <Phone className="h-4 w-4" />
               07-81-73-61-29
             </a>
@@ -116,10 +115,9 @@ export function Navigation() {
           <div className="px-4 py-6 space-y-4">
             <a href="/#services" onClick={closeMobileMenu} className="block text-white hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-primary/10">Nos services</a>
             <a href="/agences/carignan" onClick={closeMobileMenu} className="block text-white hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-primary/10">Agence Carignan</a>
-            <a href="/agences/dax" onClick={closeMobileMenu} className="block text-white hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-primary/10">Agence Dax</a>
             <a href="/contact" onClick={closeMobileMenu} className="block text-white hover:text-primary font-medium py-3 px-4 rounded-lg hover:bg-primary/10">Contact</a>
             <a href="/demande-credit?type=consumer" onClick={closeMobileMenu} className="block text-center text-white font-medium py-3 px-4 border-2 border-primary rounded-lg hover:bg-primary/10">Simuler mon crédit</a>
-            <a href="tel:0781736129" className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-primary/10 border border-primary/30 rounded-lg text-white font-medium">
+            <a href="tel:0745885764" className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-primary/10 border border-primary/30 rounded-lg text-white font-medium">
               <Phone className="h-4 w-4" /> APPELER
             </a>
           </div>

@@ -6,7 +6,7 @@ export default function CGVPage() {
     <main className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-8">
         <Link href="/">
-          <Image src="/images/logo.png" alt="Crédit-Plus Logo" width={180} height={60} className="h-12 w-auto" />
+          <Image src="/logo.png" alt="Crédit-Plus Logo" width={180} height={60} className="h-12 w-auto" />
         </Link>
       </div>
 
@@ -18,9 +18,9 @@ export default function CGVPage() {
           <p>Dans les présentes conditions générales de vente, les termes suivants ont la signification ci-après :</p>
           <ul className="list-disc pl-6 mt-2 space-y-2">
             <li>
-              <strong>Le Prestataire</strong> : SARL LB COURTAGE, exerçant sous le nom commercial Crédit-Plus, société à
-              responsabilité limitée au capital de 5000€, immatriculée au RCS de DAX sous le numéro 917986622, inscrite
-              à l'ORIAS sous le numéro 22007152.
+              <strong>Le Prestataire</strong> : SAS IM COURTAGE, exerçant sous le nom commercial Crédit Plus, société par
+              actions simplifiée immatriculée sous le numéro SIREN 944645217, inscrite
+              à l'ORIAS sous le numéro 25005566, dont le siège social est situé au 40 rue Maria Visseaux, 08110 Carignan.
             </li>
             <li>
               <strong>Le Client</strong> : toute personne physique ou morale qui sollicite les services du Prestataire.
@@ -172,7 +172,7 @@ export default function CGVPage() {
 
       <div className="mt-12 text-center">
         <p className="text-sm text-gray-600">
-          SARL LB COURTAGE - Capital social de 5000€ - RCS DAX 917986622 - ORIAS 22007152
+          SAS IM COURTAGE — SIREN 944645217 — ORIAS 25005566 — 40 rue Maria Visseaux, 08110 Carignan
         </p>
         <p className="text-sm text-gray-600 mt-1">Dernière mise à jour : {new Date().toLocaleDateString("fr-FR")}</p>
       </div>
