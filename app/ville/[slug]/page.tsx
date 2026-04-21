@@ -1838,7 +1838,7 @@ export default async function VillePage({ params }: { params: Promise<{ slug: st
                 Vous démarrez sous l'enseigne Crédit + et profitez de sa notoriété digitale dès le premier jour à {ville.nom}.
               </p>
               <ul className="space-y-2">
-                {["Notoriété et crédibilité immédiates", "Site et supports Crédit + fournis", "Accès identique aux +100 conventions", "Transition possible vers marque blanche"].map((item) => (
+                {["Notoriété et crédibilité immédiates", "Site et supports Crédit + fournis", "Accès identique aux +100 conventions", "Achat de prospects qualifiés en direct", "Transition possible vers marque blanche"].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-sm">
                     <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" /> {item}
                   </li>
