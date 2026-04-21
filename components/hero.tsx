@@ -281,7 +281,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-12 pt-5 text-xs md:text-sm text-gray-500">
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-              <span>100% gratuit</span>
+              <span>Honoraires au succès</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />

@@ -25,7 +25,7 @@ export function CTA() {
             </a>
           </Button>
           <Button size="lg" variant="outline" className="gap-2 text-lg px-8 py-6 bg-transparent" asChild>
-            <a href="tel:0781736129">
+            <a href="tel:0745885764">
               <Phone className="h-5 w-5" />
               APPELER
             </a>
@@ -39,7 +39,7 @@ export function CTA() {
           </div>
           <div className="flex items-center gap-2">
             <div className="h-2 w-2 rounded-full bg-primary" />
-            <span>100% gratuit</span>
+            <span>Honoraires au succès</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="h-2 w-2 rounded-full bg-primary" />

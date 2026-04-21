@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 export const metadata: Metadata = {
   title: "Courtier Crédit Immobilier Partout en France | Crédit Plus – Réseau National",
   description:
-    "Crédit Plus, votre courtier en crédit immobilier et professionnel partout en France. Réseau national de courtiers agréés ORIAS. Meilleur taux garanti, accompagnement 100% gratuit, réponse en 24h.",
+    "Crédit Plus, votre courtier en crédit immobilier et professionnel partout en France. Honoraires au succès, largement amortis par nos négociations sur le taux et les assurances. Réponse en 24h.",
   keywords: [
     "courtier crédit immobilier France",
     "courtier prêt immobilier national",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Courtier Crédit Immobilier Partout en France – Crédit Plus",
     description:
-      "Réseau national de courtiers Crédit Plus. Négociation du meilleur taux pour votre crédit immobilier ou professionnel, partout en France. 100% gratuit, sans engagement.",
+      "Réseau national de courtiers Crédit Plus. Négociation du meilleur taux pour votre crédit immobilier ou professionnel, partout en France. Honoraires au succès, largement amortis par nos négociations.",
     type: "website",
   },
 }
@@ -70,10 +70,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Le service de courtage est-il gratuit ?",
+          name: "Comment fonctionnent les honoraires de Crédit Plus ?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Oui, le recours à notre courtier est 100% gratuit pour l'emprunteur. Nos honoraires sont pris en charge par les établissements bancaires partenaires uniquement en cas de succès.",
+            text: "Nos honoraires sont conditionnés à la réussite de votre dossier. Ils sont largement amortis par les gains que nous obtenons grâce à nos négociations sur le taux du crédit et les assurances emprunteur.",
           },
         },
         {
@@ -182,8 +182,8 @@ const faq = [
     r: "Oui, Crédit Plus accompagne les emprunteurs partout en France, en présentiel dans nos agences ou à distance. Notre réseau couvre l'ensemble du territoire français.",
   },
   {
-    q: "Le service de courtage est-il gratuit ?",
-    r: "Oui, 100% gratuit pour l'emprunteur. Nos honoraires sont pris en charge par les banques partenaires uniquement en cas de succès.",
+    q: "Comment fonctionnent les honoraires de Crédit Plus ?",
+    r: "Nos honoraires sont conditionnés à la réussite de votre dossier. Ils sont largement amortis par les gains que nous obtenons grâce à nos négociations sur le taux du crédit et les assurances emprunteur.",
   },
   {
     q: "Puis-je tout faire à distance ?",
@@ -241,7 +241,7 @@ export default function PartoutEnFrancePage() {
               </Button>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 mt-8 text-sm text-gray-500">
-              <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-500" /> 100% gratuit</span>
+              <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-500" /> Honoraires au succès</span>
               <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-500" /> Sans engagement</span>
               <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-500" /> Réponse en 24h</span>
               <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-green-500" /> ORIAS agréé</span>
@@ -257,7 +257,7 @@ export default function PartoutEnFrancePage() {
                 { val: "+100", label: "Banques partenaires" },
                 { val: "2,90%", label: "Taux à partir de" },
                 { val: "24h", label: "Délai de réponse" },
-                { val: "100%", label: "Service gratuit" },
+                { val: "✓", label: "Honoraires au succès" },
               ].map((s) => (
                 <div key={s.label}>
                   <div className="text-3xl md:text-4xl font-bold mb-1">{s.val}</div>

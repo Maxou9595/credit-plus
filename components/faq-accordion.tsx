@@ -23,7 +23,7 @@ const faqCategories = [
       {
         question: "Les services d'un courtier sont-ils payants ?",
         answer:
-          "Chez Crédit-Plus, notre rémunération provient principalement des commissions versées par les établissements bancaires lorsqu'un prêt est accordé. Dans certains cas, des honoraires peuvent être facturés, mais ils sont toujours clairement indiqués avant tout engagement de votre part et ne sont dus qu'en cas de succès de votre dossier.",
+          "Nos honoraires sont conditionnés à la réussite de votre dossier. Ils sont largement amortis par les gains que nous obtenons grâce à nos négociations sur le taux du crédit et les assurances emprunteur.",
       },
       {
         question: "Combien de temps prend le processus de courtage ?",
@@ -43,7 +43,7 @@ const faqCategories = [
       {
         question: "Êtes-vous un organisme agréé ?",
         answer:
-          "Oui, Crédit-Plus est un courtier en opérations de banque et services de paiement (COBSP) immatriculé à l'ORIAS sous le numéro 12345678. Nous respectons toutes les obligations légales et réglementaires liées à notre activité, notamment en matière de conseil et d'information du client.",
+          "Oui, Crédit-Plus est un courtier en opérations de banque et services de paiement (COBSP) immatriculé à l'ORIAS sous le numéro 25005566. Nous respectons toutes les obligations légales et réglementaires liées à notre activité, notamment en matière de conseil et d'information du client.",
       },
       {
         question: "Puis-je faire appel à un courtier si j'ai déjà un crédit en cours ?",
