@@ -64,8 +64,9 @@ export function Footer() {
             <ul className="space-y-2">
               {[
                 { label: "Agence Carignan (08)", href: "/agences/carignan-08" },
-                { label: "Agence Dax (40)", href: "/agences/dax-40" },
                 { label: "Reims (51)", href: "/agences/reims-51" },
+                { label: "Nancy (54)", href: "/agences/nancy-54" },
+                { label: "Metz (57)", href: "/agences/metz-57" },
                 { label: "Strasbourg (67)", href: "/agences/strasbourg-67" },
                 { label: "Partout en France", href: "/agences/partout-en-france" },
                 { label: "Rejoindre le réseau", href: "/reseau/devenir-courtier-independant" },

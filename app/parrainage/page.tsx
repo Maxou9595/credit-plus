@@ -181,8 +181,8 @@ export default function ParrainagePage() {
                   07 45 88 57 64
                 </a>{" "}
                 ou par email à{" "}
-                <a href="mailto:ctdax@credit-plus.fr" className="text-primary font-medium">
-                  ctdax@credit-plus.fr
+                <a href="mailto:contact@credit-plus.fr" className="text-primary font-medium">
+                  contact@credit-plus.fr
                 </a>
                 .
               </div>

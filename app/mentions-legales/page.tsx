@@ -29,9 +29,9 @@ export default function MentionsLegalesPage() {
               </p>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mt-4">
                 <li>Raison sociale : Crédit Plus</li>
-                <li>Siège social : 38 Cr Gallieni, 40100 Dax</li>
+                <li>Siège social : 40 rue Maria Visseaux, 08110 Carignan</li>
                 <li>Téléphone : 07-45-88-57-64</li>
-                <li>Email : ctdax@credit-plus.fr</li>
+                <li>Email : contact@credit-plus.fr</li>
               </ul>
             </section>
 
@@ -83,7 +83,7 @@ export default function MentionsLegalesPage() {
                 concernant.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Pour exercer ces droits, vous pouvez nous contacter à l'adresse : ctdax@credit-plus.fr
+                Pour exercer ces droits, vous pouvez nous contacter à l'adresse : contact@credit-plus.fr
               </p>
             </section>
 

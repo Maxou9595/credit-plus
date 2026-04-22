@@ -148,9 +148,9 @@ export default function CGUPage() {
                 Pour toute question relative aux présentes CGU, vous pouvez nous contacter :
               </p>
               <ul className="list-none pl-0 text-muted-foreground space-y-2 mt-4">
-                <li>Par email : ctdax@credit-plus.fr</li>
+                <li>Par email : contact@credit-plus.fr</li>
                 <li>Par téléphone : 07-45-88-57-64</li>
-                <li>Par courrier : Crédit Plus, 38 Cr Gallieni, 40100 Dax</li>
+                <li>Par courrier : Crédit Plus, 40 rue Maria Visseaux, 08110 Carignan</li>
               </ul>
             </section>
 

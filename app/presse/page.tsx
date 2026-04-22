@@ -60,7 +60,7 @@ export default function PressePage() {
               <li><strong>ORIAS n°25005566</strong> — vérifiable sur <a href="https://www.orias.fr" target="_blank" rel="noopener noreferrer">orias.fr</a></li>
               <li><strong>SIREN 944 645 217</strong> — SAS IM COURTAGE</li>
               <li><strong>Siège</strong> : 40 rue Maria Visseaux, 08110 Carignan (Ardennes)</li>
-              <li><strong>Implantations physiques</strong> : Carignan (08), Dax (40) + accompagnement 100 % à distance partout en France</li>
+              <li><strong>Siège</strong> : Carignan (08, Ardennes) — accompagnement 100 % à distance partout en France</li>
               <li><strong>Banques et assureurs partenaires</strong> : +100 (nationales, régionales, en ligne, spécialisées)</li>
               <li><strong>Services</strong> : crédit immobilier, rachat de crédit, investissement locatif, assurance emprunteur</li>
               <li><strong>Régulation</strong> : ACPR (Autorité de Contrôle Prudentiel et de Résolution)</li>

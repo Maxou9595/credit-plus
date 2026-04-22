@@ -36,7 +36,11 @@ const REDIRECTS: Redirect[] = [
 
   // ─── Agences : ajout du code département dans le slug ───────────────
   { from: "/agences/carignan", to: "/agences/carignan-08", type: "exact" },
-  { from: "/agences/dax", to: "/agences/dax-40", type: "exact" },
+  // Dax n'est plus référencé comme agence Crédit Plus : les anciennes URLs
+  // renvoient sur le hub national pour éviter les 404 côté SERP.
+  { from: "/agences/dax", to: "/agences/partout-en-france", type: "exact" },
+  { from: "/agences/dax-40", to: "/agences/partout-en-france", type: "exact" },
+  { from: "/faq/dax", to: "/faq", type: "exact" },
 ]
 
 export function middleware(req: NextRequest) {

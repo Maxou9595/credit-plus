@@ -41,7 +41,7 @@ export default function AProposPage() {
             <h2 id="keyfigures" className="sr-only">Chiffres clés Crédit Plus</h2>
             {[
               { icon: TrendingUp, num: "+100", label: "banques et assureurs partenaires" },
-              { icon: Users, num: "2", label: "implantations physiques (Carignan, Dax)" },
+              { icon: Users, num: "France entière", label: "accompagnement 100 % à distance depuis Carignan" },
               { icon: ScrollText, num: "ORIAS 25005566", label: "immatriculation vérifiable" },
               { icon: ShieldCheck, num: "100 %", label: "honoraires au succès" },
             ].map((kf) => (
@@ -56,7 +56,7 @@ export default function AProposPage() {
           <article className="prose prose-lg max-w-none prose-a:text-primary prose-headings:text-gray-900">
             <h2>Notre histoire</h2>
             <p>
-              Crédit Plus a été fondé en 2025 par Maxime à Carignan, dans les Ardennes. L'ambition : offrir aux particuliers un service de courtage en crédit immobilier qui conjugue l'expertise d'un réseau bancaire large (plus de 100 établissements partenaires) avec la proximité et la transparence d'un cabinet indépendant. Le siège social est à Carignan (<Link href="/agences/carignan-08">40 rue Maria Visseaux, 08110</Link>), avec une seconde implantation à <Link href="/agences/dax-40">Dax dans les Landes</Link> et un accompagnement 100 % à distance partout en France.
+              Crédit Plus a été fondé en 2025 par Maxime IORI à Carignan, dans les Ardennes. L'ambition : offrir aux particuliers un service de courtage en crédit immobilier qui conjugue l'expertise d'un réseau bancaire large (plus de 100 établissements partenaires) avec la proximité et la transparence d'un cabinet indépendant. Le siège social est à Carignan (<Link href="/agences/carignan-08">40 rue Maria Visseaux, 08110</Link>). L'accompagnement est 100 % à distance pour l'ensemble du territoire français, avec des rendez-vous physiques à Carignan sur demande.
             </p>
             <p>
               La SAS IM COURTAGE est immatriculée au Registre du Commerce et des Sociétés (SIREN 944 645 217) et à l'<a href="https://www.orias.fr" target="_blank" rel="noopener noreferrer">ORIAS sous le numéro 25005566</a> — vérifiable publiquement sur orias.fr. Cette immatriculation est obligatoire pour exercer le métier d'Intermédiaire en Opérations de Banque et Services de Paiement (IOBSP).

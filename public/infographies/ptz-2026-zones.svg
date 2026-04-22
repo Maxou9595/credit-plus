@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Infographie PTZ 2026 : zones, quotités et plafonds par Crédit Plus">
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#292929"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <style>
+      .title { font: bold 36px "Arial",sans-serif; fill: #fff; }
+      .subtitle { font: 18px "Arial",sans-serif; fill: #fff; opacity: .85; }
+      .zone-name { font: bold 22px "Arial",sans-serif; fill: #111827; }
+      .zone-desc { font: 13px "Arial",sans-serif; fill: #6b7280; }
+      .pct { font: bold 28px "Arial",sans-serif; fill: #ea580c; }
+      .label { font: 11px "Arial",sans-serif; fill: #374151; text-transform: uppercase; letter-spacing: .05em; }
+      .footer { font: 13px "Arial",sans-serif; fill: #6b7280; }
+      .brand { font: bold 14px "Arial",sans-serif; fill: #ea580c; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="#f9fafb"/>
+
+  <!-- Header -->
+  <rect width="1200" height="120" fill="url(#header)"/>
+  <text x="60" y="55" class="title">PTZ 2026 — Zonage &amp; quotités</text>
+  <text x="60" y="90" class="subtitle">Prêt à Taux Zéro : qui peut en bénéficier et combien</text>
+
+  <!-- Zones grid 4 colonnes -->
+  <g transform="translate(60, 180)">
+    <!-- Zone A -->
+    <g>
+      <rect x="0" y="0" width="260" height="310" rx="16" fill="white" stroke="#e5e7eb"/>
+      <rect x="0" y="0" width="260" height="8" rx="16" fill="#dc2626"/>
+      <text x="20" y="45" class="label">Zone A</text>
+      <text x="20" y="75" class="zone-name">Paris, grandes</text>
+      <text x="20" y="100" class="zone-name">métropoles</text>
+      <text x="20" y="135" class="zone-desc">Paris, PC, Côte d'Azur,</text>
+      <text x="20" y="155" class="zone-desc">frontière suisse</text>
+
+      <line x1="20" y1="180" x2="240" y2="180" stroke="#e5e7eb"/>
+
+      <text x="20" y="210" class="label">Neuf collectif</text>
+      <text x="20" y="245" class="pct">40 %</text>
+
+      <text x="20" y="275" class="label">Plafond</text>
+      <text x="20" y="295" class="zone-name" style="font-size:18px">100 000 €</text>
+    </g>
+
+    <!-- Zone B1 -->
+    <g transform="translate(280, 0)">
+      <rect x="0" y="0" width="260" height="310" rx="16" fill="white" stroke="#e5e7eb"/>
+      <rect x="0" y="0" width="260" height="8" rx="16" fill="#ea580c"/>
+      <text x="20" y="45" class="label">Zone B1</text>
+      <text x="20" y="75" class="zone-name">Métropoles</text>
+      <text x="20" y="100" class="zone-name">régionales</text>
+      <text x="20" y="135" class="zone-desc">Reims, Strasbourg, Nancy,</text>
+      <text x="20" y="155" class="zone-desc">Metz, Lyon, Bordeaux…</text>
+
+      <line x1="20" y1="180" x2="240" y2="180" stroke="#e5e7eb"/>
+
+      <text x="20" y="210" class="label">Neuf collectif</text>
+      <text x="20" y="245" class="pct">40 %</text>
+
+      <text x="20" y="275" class="label">Plafond</text>
+      <text x="20" y="295" class="zone-name" style="font-size:18px">80 000 €</text>
+    </g>
+
+    <!-- Zone B2 -->
+    <g transform="translate(560, 0)">
+      <rect x="0" y="0" width="260" height="310" rx="16" fill="white" stroke="#e5e7eb"/>
+      <rect x="0" y="0" width="260" height="8" rx="16" fill="#f59e0b"/>
+      <text x="20" y="45" class="label">Zone B2</text>
+      <text x="20" y="75" class="zone-name">Villes</text>
+      <text x="20" y="100" class="zone-name">moyennes</text>
+      <text x="20" y="135" class="zone-desc">Châlons, Épernay, Troyes,</text>
+      <text x="20" y="155" class="zone-desc">Thionville, Colmar…</text>
+
+      <line x1="20" y1="180" x2="240" y2="180" stroke="#e5e7eb"/>
+
+      <text x="20" y="210" class="label">Neuf 40 % · Ancien 20 %</text>
+      <text x="20" y="245" class="pct">40 %</text>
+
+      <text x="20" y="275" class="label">Plafond</text>
+      <text x="20" y="295" class="zone-name" style="font-size:18px">60 000 €</text>
+    </g>
+
+    <!-- Zone C -->
+    <g transform="translate(840, 0)">
+      <rect x="0" y="0" width="240" height="310" rx="16" fill="white" stroke="#e5e7eb"/>
+      <rect x="0" y="0" width="240" height="8" rx="16" fill="#10b981"/>
+      <text x="20" y="45" class="label">Zone C</text>
+      <text x="20" y="75" class="zone-name">Zones rurales</text>
+      <text x="20" y="100" class="zone-name">petites villes</text>
+      <text x="20" y="135" class="zone-desc">Carignan, Sedan, Verdun,</text>
+      <text x="20" y="155" class="zone-desc">Bar-le-Duc, Chaumont…</text>
+
+      <line x1="20" y1="180" x2="220" y2="180" stroke="#e5e7eb"/>
+
+      <text x="20" y="210" class="label">Ancien + travaux énergétiques</text>
+      <text x="20" y="245" class="pct">20 %</text>
+
+      <text x="20" y="275" class="label">Plafond</text>
+      <text x="20" y="295" class="zone-name" style="font-size:18px">40 000 €</text>
+    </g>
+  </g>
+
+  <!-- Footer bar -->
+  <rect x="0" y="560" width="1200" height="70" fill="#111827"/>
+  <text x="60" y="600" fill="#fff" class="footer">Source : arrêté du 29 décembre 2023 · Plafonds de ressources selon zone et taille du foyer</text>
+  <text x="60" y="620" class="brand">credit-plus.fr · ORIAS n°25005566</text>
+  <text x="1140" y="610" text-anchor="end" fill="#fff" class="footer" style="opacity:.6">Infographie Crédit Plus · avril 2026</text>
+</svg>

@@ -172,7 +172,7 @@ export default function CourtierImmobilierPage() {
               <strong>Courtier réseau physique</strong> (CAFPI, Empruntis) : relationnel, présence en agence, meilleur pour les profils atypiques.
             </p>
             <p>
-              <strong>Courtier hybride</strong> — c'est le positionnement de Crédit Plus : agences physiques dans le Grand Est et à Dax, accompagnement 100 % à distance partout en France via visio pour les clients hors zone. Grille tarifaire nationale, équipe identifiable sur la page <Link href="/equipe">/equipe</Link>.
+              <strong>Courtier hybride</strong> — c'est le positionnement de Crédit Plus : siège à Carignan (Ardennes), accompagnement 100 % à distance partout en France via visio sécurisée. Équipe identifiable sur la page <Link href="/equipe">/equipe</Link>.
             </p>
           </article>
 

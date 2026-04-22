@@ -17,11 +17,11 @@ import { Info } from "lucide-react"
  */
 
 const homeFaqs = [
-  { q: "Qu'est-ce que Crédit Plus ?", a: "Crédit Plus est un courtier indépendant en crédit immobilier, rachat de crédit, investissement locatif et assurance emprunteur. Basé à Carignan (08) et à Dax (40), nous accompagnons les clients partout en France avec plus de 100 banques partenaires. Notre enregistrement ORIAS est le 25005566." },
+  { q: "Qu'est-ce que Crédit Plus ?", a: "Crédit Plus est un courtier indépendant en crédit immobilier, rachat de crédit, investissement locatif et assurance emprunteur. Basé à Carignan (08), nous accompagnons les clients partout en France avec plus de 100 banques partenaires. Notre enregistrement ORIAS est le 25005566." },
   { q: "Comment Crédit Plus négocie mon crédit immobilier ?", a: "Nous analysons votre dossier, sélectionnons 3 à 5 banques partenaires adaptées à votre profil, déposons le dossier en parallèle, puis négocions le package complet (taux, assurance, frais, garantie). Vous choisissez l'offre gagnante. Nos honoraires sont dus uniquement au succès — à la signature de l'offre." },
   { q: "Crédit Plus est-il vraiment gratuit ?", a: "Non, aucun courtier IOBSP ne l'est légalement. Nos honoraires client sont au succès, et la banque verse une commission séparée au courtier. La grille tarifaire est publique sur la page Mentions légales. Cette transparence est une obligation ACPR." },
   { q: "Combien de temps faut-il pour obtenir un crédit via Crédit Plus ?", a: "De l'appel initial à la signature chez le notaire : 6 à 10 semaines pour un dossier standard. Nous obtenons l'accord de principe bancaire sous 10 à 15 jours, l'offre de prêt suit sous 2 à 3 semaines, puis s'applique le délai légal de réflexion de 11 jours." },
-  { q: "Crédit Plus couvre-t-il toute la France ?", a: "Oui. Agences physiques à Carignan (Ardennes) et à Dax (Landes). Accompagnement 100 % à distance pour les autres régions : rendez-vous visio, échange de documents sécurisé, suivi jusqu'à la signature chez votre notaire local." },
+  { q: "Crédit Plus couvre-t-il toute la France ?", a: "Oui. Siège à Carignan (Ardennes), accompagnement 100 % à distance pour l'ensemble du territoire français via rendez-vous visio, échange de documents sécurisé, et suivi jusqu'à la signature chez votre notaire local." },
   { q: "Quelles sont les spécialités de Crédit Plus ?", a: "Primo-accédants, rachats de crédit, investissement locatif (LMNP, SCI), profils atypiques (TNS, profession libérale, expatriés, non-résidents), assurance emprunteur en délégation. Pour chaque spécialité, nous avons identifié les banques les plus ouvertes et les grilles les plus compétitives." },
 ]
 
