@@ -66,6 +66,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/equipe`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
     { url: `${SITE}/a-propos`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
     { url: `${SITE}/avis`, lastModified: now, changeFrequency: "weekly", priority: 0.75 },
+    { url: `${SITE}/presse`, lastModified: now, changeFrequency: "monthly", priority: 0.65 },
+    { url: `${SITE}/widgets/taux/embed-guide`, lastModified: now, changeFrequency: "monthly", priority: 0.55 },
 
     // Blog & Glossaire
     { url: `${SITE}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },

@@ -25,20 +25,28 @@ const nextConfig = {
   serverExternalPackages: ["resend"],
 
   // En-têtes sécurité recommandés (Lighthouse Best Practices + SecurityHeaders.io).
-  // Activer après test staging.
   async headers() {
     return [
       {
-        source: "/:path*",
+        // Règle par défaut — toutes les pages sauf /widgets/*
+        source: "/((?!widgets).*)",
         headers: [
-          {
-            key: "Strict-Transport-Security",
-            value: "max-age=63072000; includeSubDomains; preload",
-          },
+          { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(self)" },
+        ],
+      },
+      {
+        // /widgets/* : autorise l'embedding cross-origin (iframe backlink asset)
+        source: "/widgets/:path*",
+        headers: [
+          { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Content-Security-Policy", value: "frame-ancestors *" },
+          { key: "Access-Control-Allow-Origin", value: "*" },
         ],
       },
     ]
