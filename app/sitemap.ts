@@ -4,21 +4,8 @@ import { getAllGlossarySlugs } from "@/lib/glossary"
 import { blogPosts } from "@/lib/blog-posts"
 import { authors } from "@/lib/authors"
 
-/**
- * Sitemap dynamique de credit-plus.fr — refonte Phase 2.
- *
- * Sources :
- *   - Pages statiques piliers/outils/avis/équipe/contact/légal : hardcodées ici.
- *   - Pages villes B2C : lib/cities-b2c.ts
- *   - Glossaire : lib/glossary.ts
- *   - Blog : lib/blog-posts.ts
- *   - Équipe : lib/authors.ts
- *   - B2B recrutement (silo isolé) : slugs hardcodés, à migrer ultérieurement.
- */
-
 const SITE = "https://credit-plus.fr"
 
-// Silo B2B recrutement courtiers — isolé du silo B2C.
 const RESEAU_VILLE_SLUGS_B2B = [
   "paris", "lyon", "marseille", "toulouse", "nice", "nantes",
   "strasbourg", "montpellier", "bordeaux", "lille", "rennes", "reims",
@@ -29,25 +16,77 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${SITE}/`, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
-    { url: `${SITE}/credit-immobilier`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE}/credit-immobilier/simulation`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${SITE}/investissement-locatif`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE}/rachat-de-credit`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE}/assurance-emprunteur`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${SITE}/courtier-immobilier`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${SITE}/outils/calcul-mensualites`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${SITE}/equipe`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${SITE}/a-propos`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${SITE}/avis`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${SITE}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${SITE}/glossaire`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+
+    // Piliers
+    { url: `${SITE}/credit-immobilier`, lastModified: now, changeFrequency: "monthly", priority: 0.95 },
+    { url: `${SITE}/credit-immobilier/simulation`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${SITE}/investissement-locatif`, lastModified: now, changeFrequency: "monthly", priority: 0.95 },
+    { url: `${SITE}/rachat-de-credit`, lastModified: now, changeFrequency: "monthly", priority: 0.95 },
+    { url: `${SITE}/assurance-emprunteur`, lastModified: now, changeFrequency: "monthly", priority: 0.95 },
+    { url: `${SITE}/courtier-immobilier`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+
+    // Pages filles — Crédit immobilier
+    { url: `${SITE}/credit-immobilier/taux`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE}/credit-immobilier/taux/taux-15-ans`, lastModified: now, changeFrequency: "weekly", priority: 0.75 },
+    { url: `${SITE}/credit-immobilier/taux/taux-20-ans`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE}/credit-immobilier/taux/taux-25-ans`, lastModified: now, changeFrequency: "weekly", priority: 0.75 },
+    { url: `${SITE}/credit-immobilier/capacite-emprunt`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/credit-immobilier/apport-personnel`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/credit-immobilier/frais-de-notaire`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/credit-immobilier/pret-taux-zero-ptz`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/credit-immobilier/primo-accedant`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
+    // Pages filles — Investissement locatif
+    { url: `${SITE}/investissement-locatif/lmnp`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/investissement-locatif/sci`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE}/investissement-locatif/deficit-foncier`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE}/investissement-locatif/pinel`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+
+    // Pages filles — Rachat de crédit
+    { url: `${SITE}/rachat-de-credit/renegociation-pret`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/rachat-de-credit/regroupement-credits`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+
+    // Pages filles — Assurance emprunteur
+    { url: `${SITE}/assurance-emprunteur/loi-lemoine`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/assurance-emprunteur/delegation`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
+    // Outils
+    { url: `${SITE}/outils/calcul-mensualites`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/outils/calcul-capacite-emprunt`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/outils/calcul-frais-de-notaire`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/outils/calcul-taux-endettement`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE}/outils/simulation-ptz`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE}/outils/calcul-rachat-credit`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE}/outils/tableau-amortissement`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${SITE}/outils/comparateur-assurance-emprunteur`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE}/outils/attestation-financabilite`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${SITE}/outils/calcul-transfert-pret`, lastModified: now, changeFrequency: "monthly", priority: 0.65 },
+
+    // E-E-A-T
+    { url: `${SITE}/equipe`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${SITE}/a-propos`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${SITE}/avis`, lastModified: now, changeFrequency: "weekly", priority: 0.75 },
+
+    // Blog & Glossaire
+    { url: `${SITE}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${SITE}/glossaire`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+
+    // FAQ
     { url: `${SITE}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE}/faq/carignan`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE}/faq/dax`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+
+    // Parrainage / contact
     { url: `${SITE}/parrainage`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+
+    // Hub agences
     { url: `${SITE}/agences/partout-en-france`, lastModified: now, changeFrequency: "monthly", priority: 0.75 },
+
+    // B2B
     { url: `${SITE}/reseau/devenir-courtier-independant`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+
+    // Légal
     { url: `${SITE}/mentions-legales`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE}/cgu`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
     { url: `${SITE}/cgv`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
@@ -58,7 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE}/agences/${slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
-    priority: 0.8,
+    priority: 0.85,
   }))
 
   const networkCityPages: MetadataRoute.Sitemap = RESEAU_VILLE_SLUGS_B2B.map((slug) => ({
@@ -72,7 +111,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE}/blog/${p.slug}`,
     lastModified: new Date(p.updatedAt ?? p.publishedAt),
     changeFrequency: "monthly" as const,
-    priority: 0.65,
+    priority: 0.7,
   }))
 
   const glossaryPages: MetadataRoute.Sitemap = getAllGlossarySlugs().map((slug) => ({
@@ -86,7 +125,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE}/equipe/${a.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
-    priority: 0.5,
+    priority: 0.55,
   }))
 
   return [
