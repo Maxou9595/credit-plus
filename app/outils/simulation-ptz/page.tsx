@@ -18,7 +18,7 @@ const jsonLdTool = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Simulateur PTZ 2026 — Crédit Plus",
-  url: "https://credit-plus.fr/outils/simulation-ptz",
+  url: "https://creditplus-france.com/outils/simulation-ptz",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },

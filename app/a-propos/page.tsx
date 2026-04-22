@@ -123,7 +123,7 @@ export default function AProposPage() {
             <h2>Contact</h2>
             <p>
               <strong>Téléphone</strong> : <a href="tel:0745885764">07 45 88 57 64</a><br />
-              <strong>Email</strong> : <a href="mailto:contact@credit-plus.fr">contact@credit-plus.fr</a><br />
+              <strong>Email</strong> : <a href="mailto:contact@creditplus-france.com">contact@creditplus-france.com</a><br />
               <strong>Siège</strong> : 40 rue Maria Visseaux, 08110 Carignan, Ardennes<br />
               <strong>Horaires</strong> : lundi au vendredi 9h–18h, samedi sur rendez-vous<br />
               <strong>En ligne</strong> : <Link href="/credit-immobilier/simulation">formulaire de simulation gratuite</Link>, réponse sous 24h.

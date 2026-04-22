@@ -29,7 +29,7 @@ export const authors: Author[] = [
     name: "Maxime IORI",
     jobTitle: "Fondateur — Crédit Plus",
     city: "Carignan",
-    email: "contact@credit-plus.fr",
+    email: "contact@creditplus-france.com",
     shortBio:
       "Fondateur de Crédit Plus (SAS IM COURTAGE, ORIAS n°25005566). Maxime IORI s'appuie sur un réseau de courtiers et conseillers bancaires qui cumulent plus de 15 ans d'expérience en banque et plusieurs décennies d'expertise en courtage, au service des particuliers partout en France.",
     longBio:

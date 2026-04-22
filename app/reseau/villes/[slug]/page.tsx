@@ -1516,9 +1516,9 @@ export default async function VillePage({ params }: { params: Promise<{ slug: st
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.credit-plus.fr" },
-        { "@type": "ListItem", position: 2, name: "Devenir courtier indépendant", item: "https://www.credit-plus.fr/devenir-courtier-independant" },
-        { "@type": "ListItem", position: 3, name: `Courtier indépendant ${ville.nom}`, item: `https://www.credit-plus.fr/ville/${ville.slug}` },
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.creditplus-france.com" },
+        { "@type": "ListItem", position: 2, name: "Devenir courtier indépendant", item: "https://www.creditplus-france.com/devenir-courtier-independant" },
+        { "@type": "ListItem", position: 3, name: `Courtier indépendant ${ville.nom}`, item: `https://www.creditplus-france.com/ville/${ville.slug}` },
       ],
     },
     {
@@ -1526,7 +1526,7 @@ export default async function VillePage({ params }: { params: Promise<{ slug: st
       "@type": "JobPosting",
       title: `Courtier Indépendant – ${ville.nom} – Réseau Crédit +`,
       description: `Rejoignez le réseau Crédit + en tant que courtier indépendant MIOBSP à ${ville.nom}. 0 € d'apport, +100 conventions bancaires nationales incluses, marque blanche possible, outils fournis (CRM, simulateur, signature électronique), montage dossier assisté (IA + parrain).`,
-      hiringOrganization: { "@type": "Organization", name: "Crédit +", sameAs: "https://www.credit-plus.fr" },
+      hiringOrganization: { "@type": "Organization", name: "Crédit +", sameAs: "https://www.creditplus-france.com" },
       jobLocation: {
         "@type": "Place",
         address: { "@type": "PostalAddress", addressCountry: "FR", addressLocality: ville.nom, addressRegion: ville.region },

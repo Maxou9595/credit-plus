@@ -10,13 +10,13 @@ export function OrganizationSchema() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://credit-plus.fr/#organization",
+        "@id": "https://creditplus-france.com/#organization",
         "name": "Crédit Plus",
         "legalName": "SAS IM COURTAGE",
-        "url": "https://credit-plus.fr",
+        "url": "https://creditplus-france.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://credit-plus.fr/logo.png",
+          "url": "https://creditplus-france.com/logo.png",
           "width": 512,
           "height": 512,
         },
@@ -51,10 +51,10 @@ export function OrganizationSchema() {
       },
       {
         "@type": "FinancialService",
-        "@id": "https://credit-plus.fr/#financialservice",
+        "@id": "https://creditplus-france.com/#financialservice",
         "name": "Crédit Plus",
-        "url": "https://credit-plus.fr",
-        "parentOrganization": { "@id": "https://credit-plus.fr/#organization" },
+        "url": "https://creditplus-france.com",
+        "parentOrganization": { "@id": "https://creditplus-france.com/#organization" },
         "areaServed": { "@type": "Country", "name": "France" },
         "serviceType": [
           "Courtage en crédit immobilier",
@@ -65,10 +65,10 @@ export function OrganizationSchema() {
           "@type": "OfferCatalog",
           "name": "Services Crédit Plus",
           "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crédit immobilier", "url": "https://credit-plus.fr/credit-immobilier/" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investissement locatif", "url": "https://credit-plus.fr/investissement-locatif/" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rachat de crédit", "url": "https://credit-plus.fr/rachat-de-credit/" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Assurance emprunteur", "url": "https://credit-plus.fr/assurance-emprunteur/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crédit immobilier", "url": "https://creditplus-france.com/credit-immobilier/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Investissement locatif", "url": "https://creditplus-france.com/investissement-locatif/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rachat de crédit", "url": "https://creditplus-france.com/rachat-de-credit/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Assurance emprunteur", "url": "https://creditplus-france.com/assurance-emprunteur/" } },
           ],
         },
         "brand": { "@type": "Brand", "name": "Crédit Plus" },

@@ -19,7 +19,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://credit-plus.fr"),
+  metadataBase: new URL("https://creditplus-france.com"),
   title: {
     default: "Crédit Plus | Courtier en crédit immobilier et rachat de crédit",
     template: "%s | Crédit Plus",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description:
     "Crédit Plus vous accompagne dans tous vos projets de financement : crédit immobilier, rachat de crédit, investissement locatif et assurance emprunteur.",
   applicationName: "Crédit Plus",
-  authors: [{ name: "Crédit Plus", url: "https://credit-plus.fr" }],
+  authors: [{ name: "Crédit Plus", url: "https://creditplus-france.com" }],
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
   icons: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Crédit Plus — Courtier en crédit immobilier et rachat de crédit",
     description:
       "Crédit Plus vous accompagne dans tous vos projets de financement : crédit immobilier, rachat de crédit, investissement locatif et assurance emprunteur.",
-    url: "https://credit-plus.fr",
+    url: "https://creditplus-france.com",
     siteName: "Crédit Plus",
     images: [
       {

@@ -3,12 +3,12 @@ import { currentMarketRates } from "@/lib/market-rates"
 /**
  * Widget iframe-embeddable des taux de crédit immobilier.
  *
- * URL publique : https://credit-plus.fr/widgets/taux
+ * URL publique : https://creditplus-france.com/widgets/taux
  * Ce fichier utilise le pattern Next.js route handler (route.ts) au lieu
  * d'une page.tsx classique pour BYPASSER le layout racine (Navigation, Footer,
  * fonts Google) et servir un HTML totalement autonome, iframe-friendly.
  *
- * Licence éditoriale : CC-BY, attribution + lien credit-plus.fr obligatoires.
+ * Licence éditoriale : CC-BY, attribution + lien creditplus-france.com obligatoires.
  */
 
 export const dynamic = "force-static"
@@ -85,7 +85,7 @@ export async function GET() {
     <div class="footer">
       <div>Source : ${currentMarketRates.sourceName} + Crédit Plus</div>
       <div style="margin-top: 4px;">
-        Mis à jour le ${now} — <a href="https://credit-plus.fr" target="_blank" rel="noopener">credit-plus.fr</a>
+        Mis à jour le ${now} — <a href="https://creditplus-france.com" target="_blank" rel="noopener">creditplus-france.com</a>
       </div>
     </div>
   </div>

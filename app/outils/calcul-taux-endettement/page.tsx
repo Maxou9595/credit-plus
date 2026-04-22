@@ -18,7 +18,7 @@ const jsonLdTool = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Calculateur de taux d'endettement — Crédit Plus",
-  url: "https://credit-plus.fr/outils/calcul-taux-endettement",
+  url: "https://creditplus-france.com/outils/calcul-taux-endettement",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },

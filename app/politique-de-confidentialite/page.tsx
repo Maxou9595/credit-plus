@@ -36,7 +36,7 @@ export default function PolitiqueConfidentialitePage() {
               <p className="text-muted-foreground leading-relaxed">
                 Le responsable du traitement de vos données personnelles est Crédit Plus, dont le siège social est situé
                 au 40 rue Maria Visseaux, 08110 Carignan. Pour toute question relative à la protection de vos données, vous pouvez
-                nous contacter à l'adresse : contact@credit-plus.fr
+                nous contacter à l'adresse : contact@creditplus-france.com
               </p>
             </section>
 
@@ -117,7 +117,7 @@ export default function PolitiqueConfidentialitePage() {
                 <li>Droit de définir des directives relatives au sort de vos données après votre décès</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Pour exercer ces droits, vous pouvez nous contacter à l'adresse : contact@credit-plus.fr. Vous disposez
+                Pour exercer ces droits, vous pouvez nous contacter à l'adresse : contact@creditplus-france.com. Vous disposez
                 également du droit d'introduire une réclamation auprès de la CNIL (www.cnil.fr).
               </p>
             </section>

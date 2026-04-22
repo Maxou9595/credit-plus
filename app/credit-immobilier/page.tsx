@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Crédit immobilier 2026 : taux, simulation, dossier",
     description:
       "Guide complet du crédit immobilier en 2026 : taux moyens, capacité d'emprunt, PTZ, apport, étapes. Simulez en 2 minutes.",
-    url: "https://credit-plus.fr/credit-immobilier",
+    url: "https://creditplus-france.com/credit-immobilier",
     type: "article",
   },
 }

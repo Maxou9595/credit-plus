@@ -95,7 +95,7 @@ export async function POST(request: Request) {
         to: ["maximeiori08@gmail.com"],
         subject: "Nouvelle demande de crédit - Crédit-Plus",
         html: emailContent,
-        reply_to: formData.email || "contact@credit-plus.fr",
+        reply_to: formData.email || "contact@creditplus-france.com",
       })
 
       if (error) {

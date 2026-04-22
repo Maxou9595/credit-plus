@@ -31,7 +31,7 @@ export default function MentionsLegalesPage() {
                 <li>Raison sociale : Crédit Plus</li>
                 <li>Siège social : 40 rue Maria Visseaux, 08110 Carignan</li>
                 <li>Téléphone : 07-45-88-57-64</li>
-                <li>Email : contact@credit-plus.fr</li>
+                <li>Email : contact@creditplus-france.com</li>
               </ul>
             </section>
 
@@ -83,7 +83,7 @@ export default function MentionsLegalesPage() {
                 concernant.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Pour exercer ces droits, vous pouvez nous contacter à l'adresse : contact@credit-plus.fr
+                Pour exercer ces droits, vous pouvez nous contacter à l'adresse : contact@creditplus-france.com
               </p>
             </section>
 

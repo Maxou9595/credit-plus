@@ -18,7 +18,7 @@ const jsonLdTool = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Calculateur frais de notaire — Crédit Plus",
-  url: "https://credit-plus.fr/outils/calcul-frais-de-notaire",
+  url: "https://creditplus-france.com/outils/calcul-frais-de-notaire",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },

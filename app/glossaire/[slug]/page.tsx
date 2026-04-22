@@ -30,14 +30,14 @@ export default function GlossaryTermPage({ params }: { params: { slug: string } 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "DefinedTerm",
-    "@id": `https://credit-plus.fr/glossaire/${t.slug}#definedterm`,
+    "@id": `https://creditplus-france.com/glossaire/${t.slug}#definedterm`,
     name: t.term,
     description: t.shortDef,
-    url: `https://credit-plus.fr/glossaire/${t.slug}`,
+    url: `https://creditplus-france.com/glossaire/${t.slug}`,
     inDefinedTermSet: {
       "@type": "DefinedTermSet",
       name: "Glossaire du crédit immobilier — Crédit Plus",
-      url: "https://credit-plus.fr/glossaire",
+      url: "https://creditplus-france.com/glossaire",
     },
     ...(t.synonyms && { alternateName: t.synonyms }),
   }

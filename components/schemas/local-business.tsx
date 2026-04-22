@@ -33,11 +33,11 @@ export function LocalBusinessSchema({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "FinancialService"],
-    "@id": `https://credit-plus.fr/agences/${slug}/#localbusiness`,
+    "@id": `https://creditplus-france.com/agences/${slug}/#localbusiness`,
     name: `${name} — ${city}`,
-    url: `https://credit-plus.fr/agences/${slug}/`,
-    image: "https://credit-plus.fr/logo.png",
-    parentOrganization: { "@id": "https://credit-plus.fr/#organization" },
+    url: `https://creditplus-france.com/agences/${slug}/`,
+    image: "https://creditplus-france.com/logo.png",
+    parentOrganization: { "@id": "https://creditplus-france.com/#organization" },
     address: {
       "@type": "PostalAddress",
       addressLocality: city,

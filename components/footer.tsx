@@ -92,8 +92,8 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="mailto:contact@credit-plus.fr" className="text-sm text-white/60 hover:text-primary transition-colors">
-                  contact@credit-plus.fr
+                <a href="mailto:contact@creditplus-france.com" className="text-sm text-white/60 hover:text-primary transition-colors">
+                  contact@creditplus-france.com
                 </a>
               </li>
               <li className="flex items-start gap-2">

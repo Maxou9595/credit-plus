@@ -18,7 +18,7 @@ const jsonLdTool = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Tableau d'amortissement — Crédit Plus",
-  url: "https://credit-plus.fr/outils/tableau-amortissement",
+  url: "https://creditplus-france.com/outils/tableau-amortissement",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },

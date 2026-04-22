@@ -4,7 +4,7 @@
  * Interroge mensuellement ChatGPT, Claude, Perplexity et Gemini sur une liste
  * de requêtes cibles (courtier immobilier + ville, sujets YMYL typiques).
  * Logge si "Crédit Plus" apparaît dans la réponse, et si un lien vers
- * credit-plus.fr est cité comme source.
+ * creditplus-france.com est cité comme source.
  *
  * Usage : `npx tsx scripts/monitor-llm-citations.ts`
  *
@@ -78,7 +78,7 @@ type Citation = {
   provider: LLMProvider
   query: string
   creditPlusMentioned: boolean // nom cité dans la réponse
-  creditPlusLinkCited: boolean // lien vers credit-plus.fr cité comme source
+  creditPlusLinkCited: boolean // lien vers creditplus-france.com cité comme source
   response: string // tronqué 2000 premiers caractères
   timestamp: string
   error?: string

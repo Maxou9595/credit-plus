@@ -16,7 +16,7 @@ export function BreadcrumbListSchema({ items }: { items: BreadcrumbItem[] }) {
       "@type": "ListItem",
       position: idx + 1,
       name: item.name,
-      item: item.url.startsWith("http") ? item.url : `https://credit-plus.fr${item.url}`,
+      item: item.url.startsWith("http") ? item.url : `https://creditplus-france.com${item.url}`,
     })),
   };
 

@@ -21,7 +21,7 @@ export function ServiceSchema({
   areaServed = "France",
   provider = true,
 }: ServiceSchemaProps) {
-  const url = `https://credit-plus.fr${urlPath}`;
+  const url = `https://creditplus-france.com${urlPath}`;
   const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -32,7 +32,7 @@ export function ServiceSchema({
     areaServed: { "@type": "Country", name: areaServed },
   };
   if (provider) {
-    jsonLd.provider = { "@id": "https://credit-plus.fr/#organization" };
+    jsonLd.provider = { "@id": "https://creditplus-france.com/#organization" };
   }
 
   return (

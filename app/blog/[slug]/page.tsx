@@ -25,7 +25,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     openGraph: {
       title: p.title,
       description: p.description,
-      url: `https://credit-plus.fr/blog/${p.slug}`,
+      url: `https://creditplus-france.com/blog/${p.slug}`,
       type: "article",
       publishedTime: p.publishedAt,
       modifiedTime: p.updatedAt ?? p.publishedAt,

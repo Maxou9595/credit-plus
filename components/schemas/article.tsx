@@ -27,19 +27,19 @@ export function ArticleSchema({
   image,
   citations = [],
 }: ArticleSchemaProps) {
-  const url = `https://credit-plus.fr${urlPath}`;
+  const url = `https://creditplus-france.com${urlPath}`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline,
     description,
-    image: image ?? "https://credit-plus.fr/credit-plus-og.png",
+    image: image ?? "https://creditplus-france.com/credit-plus-og.png",
     datePublished,
     dateModified: dateModified ?? datePublished,
     author: {
       "@type": "Person",
       name: author.name,
-      url: `https://credit-plus.fr/equipe/${author.slug}/`,
+      url: `https://creditplus-france.com/equipe/${author.slug}/`,
       jobTitle: author.jobTitle ?? "Courtier IOBSP",
       ...(author.oriasNumber && {
         hasCredential: {
@@ -49,7 +49,7 @@ export function ArticleSchema({
       }),
     },
     publisher: {
-      "@id": "https://credit-plus.fr/#organization",
+      "@id": "https://creditplus-france.com/#organization",
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     ...(citations.length > 0 && {

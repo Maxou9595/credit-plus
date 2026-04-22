@@ -249,7 +249,7 @@ export default function ConversationalForm(props: ConversationalFormProps) {
               id="email"
               name="email"
               type="email"
-              placeholder="contact@credit-plus.fr"
+              placeholder="contact@creditplus-france.com"
               value={formData.email}
               onChange={(e) => handleChange("email", e.target.value)}
             />
@@ -672,8 +672,8 @@ export default function ConversationalForm(props: ConversationalFormProps) {
                 07 45 88 57 64
               </a>{" "}
               ou par email à{" "}
-              <a href="mailto:contact@credit-plus.fr" className="text-primary font-medium">
-                contact@credit-plus.fr
+              <a href="mailto:contact@creditplus-france.com" className="text-primary font-medium">
+                contact@creditplus-france.com
               </a>
               .
             </div>

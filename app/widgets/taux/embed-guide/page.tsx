@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function EmbedGuidePage() {
   const iframeSnippet = `<iframe
-  src="https://credit-plus.fr/widgets/taux"
+  src="https://creditplus-france.com/widgets/taux"
   width="360"
   height="520"
   frameborder="0"
@@ -38,7 +38,7 @@ export default function EmbedGuidePage() {
               Intégrer le widget taux Crédit Plus
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Affichez gratuitement les taux moyens du crédit immobilier mis à jour en temps réel sur votre blog, site agence, portail finance. Licence CC-BY : citation obligatoire + lien vers credit-plus.fr.
+              Affichez gratuitement les taux moyens du crédit immobilier mis à jour en temps réel sur votre blog, site agence, portail finance. Licence CC-BY : citation obligatoire + lien vers creditplus-france.com.
             </p>
           </header>
 
@@ -78,8 +78,8 @@ export default function EmbedGuidePage() {
             <h2>Conditions d'utilisation</h2>
             <p>Licence Creative Commons CC-BY 4.0 avec les précisions suivantes :</p>
             <ul>
-              <li><strong>Attribution obligatoire</strong> : le widget affiche automatiquement « credit-plus.fr » en pied. Ne pas masquer ce pied de page.</li>
-              <li><strong>Lien do-follow requis</strong> : si vous citez les taux dans votre article au-delà du widget, ajoutez un lien <code>&lt;a href="https://credit-plus.fr" rel="noopener"&gt;</code>.</li>
+              <li><strong>Attribution obligatoire</strong> : le widget affiche automatiquement « creditplus-france.com » en pied. Ne pas masquer ce pied de page.</li>
+              <li><strong>Lien do-follow requis</strong> : si vous citez les taux dans votre article au-delà du widget, ajoutez un lien <code>&lt;a href="https://creditplus-france.com" rel="noopener"&gt;</code>.</li>
               <li><strong>Modifications interdites</strong> : ne modifiez pas le CSS ou le JavaScript du widget. Si vous souhaitez un widget custom (couleurs, taille), contactez-nous.</li>
               <li><strong>Usage commercial autorisé</strong> — blogs monétisés, sites agences immobilières, portails finance, journaux en ligne.</li>
             </ul>
@@ -95,7 +95,7 @@ export default function EmbedGuidePage() {
             <h2>Vous êtes journaliste ou site partenaire ?</h2>
             <p>Contactez-nous pour des widgets personnalisés (calculateur de mensualités en iframe, baromètre Grand Est, simulateur PTZ) :</p>
             <ul>
-              <li>Email : <a href="mailto:contact@credit-plus.fr?subject=Widget%20embed">contact@credit-plus.fr</a></li>
+              <li>Email : <a href="mailto:contact@creditplus-france.com?subject=Widget%20embed">contact@creditplus-france.com</a></li>
               <li>Page presse : <Link href="/presse">espace presse Crédit Plus</Link></li>
             </ul>
           </article>

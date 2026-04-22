@@ -29,7 +29,7 @@ export function PersonSchema({
   knowsAbout,
   foundingDate,
 }: PersonSchemaProps) {
-  const url = `https://credit-plus.fr/equipe/${slug}/`;
+  const url = `https://creditplus-france.com/equipe/${slug}/`;
   const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -37,7 +37,7 @@ export function PersonSchema({
     name,
     url,
     jobTitle,
-    worksFor: { "@id": "https://credit-plus.fr/#organization" },
+    worksFor: { "@id": "https://creditplus-france.com/#organization" },
   };
   if (description) jsonLd.description = description;
   if (image) jsonLd.image = image;

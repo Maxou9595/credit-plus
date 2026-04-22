@@ -18,7 +18,7 @@ const jsonLdTool = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Calculateur de capacité d'emprunt — Crédit Plus",
-  url: "https://credit-plus.fr/outils/calcul-capacite-emprunt",
+  url: "https://creditplus-france.com/outils/calcul-capacite-emprunt",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },

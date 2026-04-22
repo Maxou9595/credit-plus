@@ -19,7 +19,7 @@ const jsonLdTool = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Calculateur de mensualités de crédit immobilier — Crédit Plus",
-  url: "https://credit-plus.fr/outils/calcul-mensualites",
+  url: "https://creditplus-france.com/outils/calcul-mensualites",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },

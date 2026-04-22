@@ -93,12 +93,12 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.credit-plus.fr" },
+      { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.creditplus-france.com" },
       {
         "@type": "ListItem",
         position: 2,
         name: "Devenir courtier indépendant",
-        item: "https://www.credit-plus.fr/devenir-courtier-independant",
+        item: "https://www.creditplus-france.com/devenir-courtier-independant",
       },
     ],
   },
@@ -111,7 +111,7 @@ const jsonLd = [
     hiringOrganization: {
       "@type": "Organization",
       name: "Crédit +",
-      sameAs: "https://www.credit-plus.fr",
+      sameAs: "https://www.creditplus-france.com",
     },
     jobLocation: {
       "@type": "Place",

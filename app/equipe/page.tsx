@@ -79,7 +79,7 @@ export default function EquipePage() {
               <strong>Note éditoriale :</strong> cette page est en cours d'enrichissement. Les fiches individuelles
               des courtiers Crédit Plus (photos, parcours, ORIAS individuels, LinkedIn) seront publiées après validation
               RH. Pour toute question d'identité éditoriale sur un contenu publié, contactez{" "}
-              <a href="mailto:contact@credit-plus.fr" className="underline">contact@credit-plus.fr</a>.
+              <a href="mailto:contact@creditplus-france.com" className="underline">contact@creditplus-france.com</a>.
             </aside>
           )}
 

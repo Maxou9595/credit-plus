@@ -18,7 +18,7 @@ const jsonLdTool = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Calculateur de rachat de crédit — Crédit Plus",
-  url: "https://credit-plus.fr/outils/calcul-rachat-credit",
+  url: "https://creditplus-france.com/outils/calcul-rachat-credit",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },

@@ -36,11 +36,11 @@ export default function PressePage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact presse direct</h2>
             <p className="text-gray-700 mb-4">Besoin d'un commentaire expert sous 2h ? Contactez-nous directement.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              <a href="mailto:contact@credit-plus.fr?subject=Demande%20presse" className="flex items-center gap-3 p-4 rounded-xl bg-white border border-gray-200 hover:border-primary transition">
+              <a href="mailto:contact@creditplus-france.com?subject=Demande%20presse" className="flex items-center gap-3 p-4 rounded-xl bg-white border border-gray-200 hover:border-primary transition">
                 <Mail className="h-5 w-5 text-primary" aria-hidden />
                 <div>
                   <div className="text-xs text-gray-500">Email presse</div>
-                  <div className="font-semibold text-gray-900">contact@credit-plus.fr</div>
+                  <div className="font-semibold text-gray-900">contact@creditplus-france.com</div>
                 </div>
               </a>
               <a href="tel:0745885764" className="flex items-center gap-3 p-4 rounded-xl bg-white border border-gray-200 hover:border-primary transition">
@@ -128,7 +128,7 @@ export default function PressePage() {
 
             <h2>Outils et widgets embeddables</h2>
             <p>
-              Crédit Plus propose plusieurs outils en open embed (iframe) utilisables par les sites partenaires et les médias. Citation et lien vers credit-plus.fr obligatoires, aucun frais.
+              Crédit Plus propose plusieurs outils en open embed (iframe) utilisables par les sites partenaires et les médias. Citation et lien vers creditplus-france.com obligatoires, aucun frais.
             </p>
             <ul>
               <li><Link href="/widgets/taux">Widget des taux du mois</Link> — mis à jour automatiquement chaque 1er du mois.</li>
@@ -162,14 +162,14 @@ export default function PressePage() {
             <ul>
               <li>Citations des chiffres Crédit Plus : attribution obligatoire (« Source : Crédit Plus, courtier IOBSP ORIAS n°25005566 »).</li>
               <li>Utilisation du logo : autorisée dans un contexte éditorial, interdite dans un contexte publicitaire sans accord préalable.</li>
-              <li>Reproduction d'articles de notre blog : autorisée sous licence CC-BY (mention « Source : credit-plus.fr » + lien).</li>
+              <li>Reproduction d'articles de notre blog : autorisée sous licence CC-BY (mention « Source : creditplus-france.com » + lien).</li>
               <li>Interviews : autorisées, relecture de citation disponible sur demande (délai 2h ouvrées).</li>
             </ul>
           </article>
 
           <div className="mt-12 flex flex-col sm:flex-row gap-3">
             <Button size="lg" asChild>
-              <a href="mailto:contact@credit-plus.fr?subject=Demande%20presse">Nous contacter presse</a>
+              <a href="mailto:contact@creditplus-france.com?subject=Demande%20presse">Nous contacter presse</a>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/equipe/maxime-iori">Fiche porte-parole</Link>

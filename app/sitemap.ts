@@ -4,7 +4,7 @@ import { getAllGlossarySlugs } from "@/lib/glossary"
 import { blogPosts } from "@/lib/blog-posts"
 import { authors } from "@/lib/authors"
 
-const SITE = "https://credit-plus.fr"
+const SITE = "https://creditplus-france.com"
 
 const RESEAU_VILLE_SLUGS_B2B = [
   "paris", "lyon", "marseille", "toulouse", "nice", "nantes",

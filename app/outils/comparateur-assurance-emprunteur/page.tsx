@@ -18,7 +18,7 @@ const jsonLdTool = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Comparateur assurance emprunteur — Crédit Plus",
-  url: "https://credit-plus.fr/outils/comparateur-assurance-emprunteur",
+  url: "https://creditplus-france.com/outils/comparateur-assurance-emprunteur",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web",
   offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },

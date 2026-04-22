@@ -35,7 +35,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     openGraph: {
       title: `Courtier immobilier à ${city.name} — Crédit Plus`,
       description: `Courtier immobilier à ${city.name} : négociation bancaire, simulation gratuite.`,
-      url: `https://credit-plus.fr/agences/${city.slug}`,
+      url: `https://creditplus-france.com/agences/${city.slug}`,
       type: "website",
     },
   }
@@ -149,7 +149,7 @@ export default function AgenceCityPage({ params }: { params: { slug: string } })
                 <ul className="not-prose my-4 space-y-2">
                   <li className="flex items-start gap-2"><MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" aria-hidden /><span>{city.physicalAgencyAddress}</span></li>
                   <li className="flex items-start gap-2"><Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" aria-hidden /><a href="tel:0745885764" className="underline">07 45 88 57 64</a></li>
-                  <li className="flex items-start gap-2"><Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" aria-hidden /><a href="mailto:contact@credit-plus.fr" className="underline">contact@credit-plus.fr</a></li>
+                  <li className="flex items-start gap-2"><Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" aria-hidden /><a href="mailto:contact@creditplus-france.com" className="underline">contact@creditplus-france.com</a></li>
                   <li className="flex items-start gap-2"><Clock className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" aria-hidden /><span>Lundi – Vendredi : 9h–18h · Samedi sur rendez-vous</span></li>
                 </ul>
               </>
