@@ -98,7 +98,7 @@ export function Navigation() {
           <Button variant="outline" size="sm" className="gap-2 bg-primary/10 border-primary/30 hover:bg-primary/20 text-white" asChild>
             <a href="tel:0745885764">
               <Phone className="h-4 w-4" />
-              07-81-73-61-29
+              07-45-88-57-64
             </a>
           </Button>
         </div>

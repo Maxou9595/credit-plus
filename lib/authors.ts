@@ -3,7 +3,7 @@
  *
  * IMPORTANT — E-E-A-T YMYL :
  *   Chaque courtier doit avoir son ORIAS individuel (différent du ORIAS entreprise).
- *   Les champs marqués // TODO sont à compléter par la direction avant publication.
+ *   Les champs marqués // TODO sont à compléter par la direction avant publication définitive.
  */
 
 export type Author = {
@@ -23,6 +23,40 @@ export type Author = {
 }
 
 export const authors: Author[] = [
+  // ── Fiche founder ─────────────────────────────────────────────────────
+  // Infos publiques (ORIAS entreprise 25005566, SIREN 944 645 217, Carignan,
+  // email maximeiori08@gmail.com). Les champs `TODO` ci-dessous sont à
+  // compléter par Maxime avant mise en production définitive.
+  {
+    slug: "maxime-iori",
+    name: "Maxime Iori", // TODO — confirmer l'orthographe exacte du nom civil
+    jobTitle: "Fondateur & courtier IOBSP — Crédit Plus",
+    city: "Carignan",
+    email: "maximeiori08@gmail.com",
+    // photo: "/team/maxime-iori.jpg",       // TODO — ajouter photo pro, fond neutre, 600×600 minimum
+    // oriasNumber: "XXXXXXXX",              // TODO — ORIAS individuel (différent de 25005566 qui est celui de la société)
+    // linkedin: "https://www.linkedin.com/in/maxime-iori",  // TODO — compléter
+    // yearsOfExperience: X,                  // TODO — nombre d'années d'expérience en courtage
+    specialties: [
+      "Crédit immobilier",
+      "Rachat de crédit",
+      "Investissement locatif",
+      "Assurance emprunteur",
+    ],
+    shortBio:
+      "Fondateur de Crédit Plus (SAS IM COURTAGE, ORIAS n°25005566). Courtier IOBSP basé à Carignan dans les Ardennes, Maxime accompagne des particuliers partout en France pour leurs projets de crédit immobilier, rachat, investissement locatif et assurance emprunteur.",
+    longBio:
+      "Maxime a fondé Crédit Plus (SAS IM COURTAGE) en 2025 à Carignan, dans les Ardennes, avec une conviction simple : un bon courtier doit être joignable, transparent sur ses honoraires et rigoureux dans la négociation. Cette triple exigence structure l'ensemble des dossiers traités par le réseau.\n\nL'activité de Crédit Plus est strictement encadrée : immatriculation ORIAS n°25005566 (vérifiable publiquement sur orias.fr), contrôle par l'ACPR, respect des règles HCSF en 2026 (35 % d'endettement maximum, durée 25 ans max, flexibilité 20 %) et transparence tarifaire complète. Les honoraires client sont dus uniquement à la signature de l'offre de prêt, ce qui aligne les intérêts du courtier et du client.\n\nMaxime intervient sur l'ensemble du territoire avec deux implantations physiques (Carignan 08 et Dax 40) et des rendez-vous en visioconférence pour les autres régions. La grille tarifaire publique figure sur la page mentions légales.",
+    credentials: [
+      // TODO — compléter les formations / certifications obtenues :
+      // "IOBSP niveau 1 — capacité professionnelle d'intermédiaire en opérations de banque et services de paiement (arrêté du 17 octobre 2013)",
+      // "Formation initiale de X années (BTS Banque, licence, etc.)",
+    ],
+  },
+
+  // Auteur-paravent pour les contenus signés par l'équipe éditoriale (pas
+  // strictement personnalisables). Utile pour les articles de synthèse
+  // produits en atelier éditorial avant validation par un courtier référent.
   {
     slug: "equipe-credit-plus",
     name: "L'équipe Crédit Plus",
@@ -34,31 +68,10 @@ export const authors: Author[] = [
     specialties: ["Crédit immobilier", "Rachat de crédit", "Investissement locatif"],
     city: "Carignan",
   },
-  // TODO — compléter avec les fiches individuelles des courtiers Crédit Plus :
-  //
-  // {
-  //   slug: "prenom-nom",
-  //   name: "Prénom NOM",
-  //   jobTitle: "Courtier IOBSP — Crédit Plus",
-  //   oriasNumber: "XXXXXXXX",            // ORIAS individuel
-  //   photo: "/team/prenom-nom.jpg",      // photo pro visage, fond neutre
-  //   shortBio: "X ans d'expérience en courtage. Spécialisé en ...",
-  //   longBio: "Paragraphe long : parcours, formations, expériences précédentes.",
-  //   linkedin: "https://www.linkedin.com/in/...",
-  //   email: "prenom.nom@credit-plus.fr",
-  //   yearsOfExperience: X,
-  //   specialties: ["Primo-accédants", "SCI", "Non-résidents"],
-  //   credentials: [
-  //     "IOBSP niveau 1 (arrêté du 17 octobre 2013)",
-  //     "BTS Banque — conseiller de clientèle (ou équivalent)",
-  //     "Certification AMF (si applicable)",
-  //   ],
-  //   city: "Carignan",
-  // },
 ]
 
-/** Auteur par défaut utilisé tant que les fiches individuelles ne sont pas renseignées. */
-export const defaultAuthor: Author = authors[0]
+/** Auteur par défaut utilisé pour les contenus qui ne sont pas signés nominativement. */
+export const defaultAuthor: Author = authors.find((a) => a.slug === "maxime-iori") ?? authors[0]
 
 export function getAuthorBySlug(slug: string): Author | undefined {
   return authors.find((a) => a.slug === slug)

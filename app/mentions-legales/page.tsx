@@ -30,7 +30,7 @@ export default function MentionsLegalesPage() {
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mt-4">
                 <li>Raison sociale : Crédit Plus</li>
                 <li>Siège social : 38 Cr Gallieni, 40100 Dax</li>
-                <li>Téléphone : 07-81-73-61-29</li>
+                <li>Téléphone : 07-45-88-57-64</li>
                 <li>Email : ctdax@credit-plus.fr</li>
               </ul>
             </section>

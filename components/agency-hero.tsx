@@ -65,7 +65,7 @@ export function AgencyHero({ city, title, description }: AgencyHeroProps) {
                 <ArrowRight className="h-5 w-5" />
               </Button>
             </Link>
-            <Link href="tel:0781736129">
+            <Link href="tel:0745885764">
               <Button size="lg" variant="outline" className="gap-2 text-lg px-8 py-6 bg-transparent">
                 <Phone className="h-5 w-5" />
                 APPELER

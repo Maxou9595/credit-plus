@@ -149,7 +149,7 @@ export default function CGUPage() {
               </p>
               <ul className="list-none pl-0 text-muted-foreground space-y-2 mt-4">
                 <li>Par email : ctdax@credit-plus.fr</li>
-                <li>Par téléphone : 07-81-73-61-29</li>
+                <li>Par téléphone : 07-45-88-57-64</li>
                 <li>Par courrier : Crédit Plus, 38 Cr Gallieni, 40100 Dax</li>
               </ul>
             </section>
