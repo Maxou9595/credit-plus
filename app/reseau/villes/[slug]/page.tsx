@@ -6,7 +6,7 @@ import {
   CheckCircle, ArrowRight, MapPin, Zap, FileText,
   Users, Shield, BarChart3, Laptop, Award, BadgeCheck, ChevronDown,
 } from "lucide-react"
-import RecrutementForm from "@/app/devenir-courtier-independant/recrutement-form"
+import RecrutementForm from "@/app/reseau/devenir-courtier-independant/recrutement-form"
 
 /* ─── Données villes ──────────────────────────────────────────────────── */
 

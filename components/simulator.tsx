@@ -102,7 +102,7 @@ export function Simulator() {
                 </div>
               </div>
 
-              <Link href="/demande-credit?type=consumer">
+              <Link href="/credit-immobilier/simulation">
                 <Button size="lg" className="w-full text-lg py-6 bg-primary hover:bg-primary/90">
                   Obtenir mon offre personnalisée
                 </Button>

@@ -51,7 +51,7 @@ export function AgencyHero({ city, title, description }: AgencyHeroProps) {
             <span className="block bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
               Votre crédit
             </span>
-            <span className="block mt-2 text-foreground">sans perdre de TIME</span>
+            <span className="block mt-2 text-foreground">en toute sérénité</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-foreground/80 max-w-3xl mx-auto leading-relaxed text-pretty">
@@ -59,7 +59,7 @@ export function AgencyHero({ city, title, description }: AgencyHeroProps) {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Link href="/demande-credit?type=consumer">
+            <Link href="/credit-immobilier/simulation">
               <Button size="lg" className="gap-2 text-lg px-8 py-6 bg-primary hover:bg-primary/90">
                 Simuler mon crédit
                 <ArrowRight className="h-5 w-5" />
