@@ -10,25 +10,25 @@ const services = [
     icon: Home,
     title: "Crédit Immobilier",
     description: "Achat de résidence principale ou secondaire avec les meilleurs taux du marché.",
-    href: "/services/credit-immobilier",
+    href: "/credit-immobilier",
   },
   {
     icon: Building2,
     title: "Investissement Locatif",
     description: "Optimisez votre patrimoine avec des solutions de financement adaptées.",
-    href: "/services/investissement-locatif",
+    href: "/investissement-locatif",
   },
   {
     icon: TrendingUp,
     title: "Rachat de Crédit",
     description: "Regroupez vos crédits pour réduire vos mensualités et simplifier votre gestion.",
-    href: "/services/rachat-de-credit",
+    href: "/rachat-de-credit",
   },
   {
     icon: Shield,
     title: "Assurance Emprunteur",
     description: "Protégez votre investissement avec une assurance adaptée à votre profil.",
-    href: "/services/assurance-emprunteur",
+    href: "/assurance-emprunteur",
   },
 ]
 

@@ -63,7 +63,7 @@ export function Hero() {
 
           <div className="hidden lg:flex items-center gap-8">
             <a
-              href="/temoignages"
+              href="/avis"
               className="flex flex-col items-center gap-1 px-3 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 border border-yellow-500/30 hover:border-yellow-500/50"
             >
               <span className="text-xs font-semibold text-white whitespace-nowrap">Avis Google vérifiés</span>
@@ -97,7 +97,7 @@ export function Hero() {
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-72 bg-white border border-gray-200 rounded-xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-300 z-50">
                     <div className="p-2 space-y-1">
                       {[
-                        { href: "/agences/carignan", name: "Carignan", sub: "Ardennes (08)" },
+                        { href: "/agences/carignan-08", name: "Carignan", sub: "Ardennes (08)" },
                         { href: "/agences/partout-en-france", name: "Partout en France", sub: "Réseau national · À distance" },
                       ].map((ag) => (
                         <a
@@ -129,7 +129,7 @@ export function Hero() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
             <a
-              href="/demande-credit?type=consumer"
+              href="/credit-immobilier/simulation"
               className="text-white hover:text-primary transition-all duration-300 font-medium px-4 py-2 border-2 border-primary rounded-lg hover:bg-primary/10"
             >
               Simuler mon crédit
@@ -157,7 +157,7 @@ export function Hero() {
           <div className="lg:hidden absolute top-full left-0 right-0 bg-[#1e1e1e] border-b border-primary/30 shadow-xl animate-in slide-in-from-top-2 duration-300">
             <div className="px-4 py-6 space-y-4">
               <a
-                href="/temoignages"
+                href="/avis"
                 onClick={closeMobileMenu}
                 className="flex flex-col items-center gap-2 w-full py-3 px-4 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 border border-yellow-500/30"
               >
@@ -188,7 +188,7 @@ export function Hero() {
                 {showAgencies && (
                   <div className="mt-2 ml-4 space-y-2">
                     {[
-                      { href: "/agences/carignan", name: "Carignan", sub: "Ardennes (08)" },
+                      { href: "/agences/carignan-08", name: "Carignan", sub: "Ardennes (08)" },
                       { href: "/agences/partout-en-france", name: "Partout en France", sub: "Réseau national · À distance" },
                     ].map((ag) => (
                       <a
@@ -215,7 +215,7 @@ export function Hero() {
                 Contact
               </a>
               <a
-                href="/demande-credit?type=consumer"
+                href="/credit-immobilier/simulation"
                 onClick={closeMobileMenu}
                 className="block text-gray-700 hover:text-primary transition-all duration-300 font-medium py-3 px-4 border-2 border-primary rounded-lg hover:bg-primary/10 text-center"
               >
@@ -240,7 +240,7 @@ export function Hero() {
             <span className="block bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
               Votre crédit
             </span>
-            <span className="block mt-2 text-gray-900">sans perdre de TIME</span>
+            <span className="block mt-2 text-gray-900">en toute sérénité</span>
           </h1>
 
           <div className="inline-flex items-center justify-center">
@@ -260,7 +260,7 @@ export function Hero() {
               className="gap-2 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 bg-primary hover:bg-primary/90 w-full sm:w-auto"
               asChild
             >
-              <a href="/demande-credit?type=consumer">
+              <a href="/credit-immobilier/simulation">
                 Simuler mon crédit
                 <ArrowRight className="h-5 w-5" />
               </a>

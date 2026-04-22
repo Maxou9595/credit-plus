@@ -40,8 +40,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Téléphone</h3>
-                      <a href="tel:0781736129" className="text-muted-foreground hover:text-primary transition-colors">
-                        07-81-73-61-29
+                      <a href="tel:0745885764" className="text-muted-foreground hover:text-primary transition-colors">
+                        07-45-88-57-64
                       </a>
                     </div>
                   </div>
@@ -53,10 +53,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Email</h3>
                       <a
-                        href="mailto:ctdax@credit-plus.fr"
+                        href="mailto:contact@creditplus-france.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        ctdax@credit-plus.fr
+                        contact@creditplus-france.com
                       </a>
                     </div>
                   </div>
@@ -104,29 +104,6 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div className="h-px bg-border" />
-
-                  <div className="group">
-                    <div className="flex items-start gap-4">
-                      <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                        <MapPin className="h-5 w-5 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-foreground mb-1">Dax</h3>
-                        <p className="text-muted-foreground text-sm mb-2">
-                          38 Cr Gallieni
-                          <br />
-                          40100 Dax
-                        </p>
-                        <a
-                          href="/agences/dax"
-                          className="text-primary hover:text-primary/80 text-sm font-medium transition-colors"
-                        >
-                          Voir l'agence →
-                        </a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

@@ -14,12 +14,12 @@ export function CTA() {
         </h2>
 
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-          Nos experts vous accompagnent gratuitement pour trouver le meilleur financement adapté à votre situation.
+          Nos courtiers vous accompagnent sans frais préalables pour identifier le financement adapté à votre projet. Honoraires dus uniquement à la signature de l’offre.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
           <Button size="lg" className="gap-2 text-lg px-8 py-6 bg-primary hover:bg-primary/90" asChild>
-            <a href="/demande-credit?type=consumer">
+            <a href="/credit-immobilier/simulation">
               Simuler mon crédit
               <ArrowRight className="h-5 w-5" />
             </a>

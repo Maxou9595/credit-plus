@@ -165,12 +165,12 @@ export default function ParrainageForm() {
 
             <div>
               Vous pouvez également nous contacter directement par téléphone au{" "}
-              <a href="tel:+330781736129" className="text-primary font-medium">
-                07 81 73 61 29
+              <a href="tel:+330745885764" className="text-primary font-medium">
+                07 45 88 57 64
               </a>{" "}
               ou par email à{" "}
-              <a href="mailto:ctdax@credit-plus.fr" className="text-primary font-medium">
-                ctdax@credit-plus.fr
+              <a href="mailto:contact@creditplus-france.com" className="text-primary font-medium">
+                contact@creditplus-france.com
               </a>
               .
             </div>

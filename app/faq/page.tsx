@@ -29,8 +29,8 @@ const faqJsonLd = {
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.credit-plus.fr" },
-        { "@type": "ListItem", position: 2, name: "FAQ", item: "https://www.credit-plus.fr/faq" },
+        { "@type": "ListItem", position: 1, name: "Accueil", item: "https://www.creditplus-france.com" },
+        { "@type": "ListItem", position: 2, name: "FAQ", item: "https://www.creditplus-france.com/faq" },
       ],
     },
     {

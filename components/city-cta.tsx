@@ -15,7 +15,7 @@ export function CityCTA({ cityName }: CityCTAProps) {
         Obtenez une simulation gratuite et sans engagement en quelques minutes
       </p>
       <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100">
-        <Link href="/demande-credit?type=mortgage">Faire une simulation gratuite</Link>
+        <Link href="/credit-immobilier/simulation">Faire une simulation</Link>
       </Button>
     </section>
   )

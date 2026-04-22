@@ -104,7 +104,7 @@ export default function CreditCalculator() {
           </div>
 
           <Button className="w-full bg-primary hover:bg-primary/90" asChild>
-            <Link href="/demande-credit">Obtenir une offre personnalisée</Link>
+            <Link href="/credit-immobilier/simulation">Obtenir une offre personnalisée</Link>
           </Button>
 
           <p className="text-xs text-muted-foreground text-center">

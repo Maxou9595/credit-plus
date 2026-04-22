@@ -17,7 +17,7 @@ export default function MobileMenu() {
     { href: "/faq", label: "FAQ" },
     { href: "/#contact", label: "Contact" },
     { href: "/parrainage", label: "Parrainage" },
-    { href: "/demande-credit", label: "Demande de crédit", isButton: true },
+    { href: "/credit-immobilier/simulation", label: "Demande de crédit", isButton: true },
   ]
 
   // Fonction pour vérifier si un lien est actif

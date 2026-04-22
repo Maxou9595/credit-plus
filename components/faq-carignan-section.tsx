@@ -264,10 +264,10 @@ export function FaqCarignanSection() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:0781736129"
+              href="tel:0745885764"
               className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
             >
-              Appeler le 07-81-73-61-29
+              Appeler le 07-45-88-57-64
             </a>
             <Link
               href="/contact"
